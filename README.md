@@ -55,15 +55,15 @@ configurable via a **minimal Statefile** (`yml`).
  </span>
 </blockquote>
 
-### Comparisons
+## Comparisons
 
-#### Docker Desktop
+### Docker Desktop
 
 - **Speed**: Be faster (container startup & stuff)
 - **Accessibility**: Better GUI (lean & clean)
 - WIP
 
-#### Kubernetes
+### Kubernetes
 
 We aim to **simplify** known K8s difficulties step by step.
 The goal is to **support important use cases** & **workflows**
