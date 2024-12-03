@@ -62,7 +62,7 @@ tc + alpine-1.yml
 ```
 
 ```yaml
-# Source: github.com/pure-linux/tinyoctl/examples/basic/alpine-1.yml
+# Source: https://github.com/pure-linux/tinyoctl/blob/release/alpha/0.0.1/examples/basic/alpine-1.yml
 container: "alpine:latest"
 port: 8080
 mounts:
