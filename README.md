@@ -53,11 +53,11 @@ mounts:
 The system has the following 3 main components. [tinyoctl](https://github.com/pure-linux/tinyoctl) interacts with [tinyonode](https://github.com/pure-linux/tinyonode) to start [tinyort](https://github.com/pure-linux/tinyort).
 Don't worry about master/worker nodes and so on. The system operates similarly to a **mesh** topology:
 
-- [tinyoctl](https://github.com/pure-linux/tinyo-ctl): Contains cli and packages intended for use by client programs.
-- [tinyonode](https://github.com/pure-linux/tinyo-node): Controller which is running on every cluster node.
-- [tinyort](https://github.com/pure-linux/tinyo-runtime-container): Container runtime
+- [tinyoctl](https://github.com/pure-linux/tinyoctl): Contains cli and packages intended for use by client programs.
+- [tinyonode](https://github.com/pure-linux/tinyonode): Controller which is running on every cluster node.
+- [tinyort](https://github.com/pure-linux/tinyort): Container runtime
 
-The [features/runtime/core.rs][src-features-runtime-core.rs] currently has the size of about **350** code lines. Take a look at the [Runtime Core Architecture][docs-runtime-core-readme.md].
+The [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the size of about **350** code lines. Take a look at the [Runtime Core Architecture][tinyort-docs-utils-core-readme.md].
 
 ## Roadmap
 
@@ -163,5 +163,5 @@ The people that are listed here made important direct and/or indirect contributi
 Pure-Linux.com | Delivering to the open-source community what matters most.
 
 [discord]: https://discord.gg/ERKBk6ArnQ
-[src-features-runtime-core.rs]: /src/features/runtime/core.rs
-[docs-runtime-core-readme.md]: /docs/runtime/core/README.md
+[tinyort-src-utils-core.rs]: https://github.com/pure-linux/tinyort/src/utils/core.rs
+[tinyort-docs-utils-core-readme.md]: https://github.com/pure-linux/tinyort/docs/utils/README.md
