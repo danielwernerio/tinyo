@@ -32,7 +32,8 @@ Ensure you have the necessary permissions and understand the **security implicat
 
 ## Usage
 
-TinyO uses **minimal Statefiles** and operates similarly to a **mesh** topology. Don't worry about master/worker nodes and so on. 
+TinyO uses **minimal Statefiles** and operates similarly to a **mesh** topology.
+Don't worry about master/worker nodes and so on. 
 Here is an example with 1 Container, 1 Port & 2 Mounts:
 
 ```yaml
