@@ -22,10 +22,17 @@ Feel free to [![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?lo
 
 ## Quickstart
 
-Just execute & you're ready to orchestrate on any platform (coming soon):
+Just execute & you're ready to orchestrate on any platform (coming soon). This automatically **installs** ```tinyoctl``` & **initializes** a local **cluster** on the host system. **Be ready in seconds**:
+
 ```bash
 sh curl tinyo.io/get | bash
 ```
+
+<blockquote>
+ <span>
+    We achieve more with less.
+ </span>
+</blockquote>
 
 ⚠️ The current alpha version of TinyO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
 
