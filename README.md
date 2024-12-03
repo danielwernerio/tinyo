@@ -64,8 +64,7 @@ The [features/runtime/core.rs][src-features-runtime-core.rs] currently has the s
 ### Phase 1: Solve localhost environment
 
 - Minimal prototype
-  - Download & start alpine container **faster** than **Docker** with low-level libs,
-configurable via a **minimal Statefile** (`yml`).
+  - Start alpine container **faster** than **Docker** with low-level libraries
 - Base version
   - WIP
 
