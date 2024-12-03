@@ -10,6 +10,9 @@
 It is currently in an **early alpha** state.
 We're working hard on the first safe **single node localhost version** for **Linux** & **MacOS**.
 
+Currently **332** Rust code lines.
+**MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
+
 Feel free to [![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ).
 
 ## Quickstart
@@ -85,6 +88,8 @@ The goal is to **support important use cases** & **workflows** for which K8s is 
 - WIP
 
 ## PureLinux DAO
+
+All IP (Code, ..) of PureLinux is owned by the DAO and the DAO is owned by the contributors of the DAO.
 
 <blockquote>
  <span>
