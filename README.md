@@ -39,7 +39,7 @@ tinyoctl ++ -net [network_name] -u [admin_username] -p [admin_password]
 
 To **add** more **nodes** just execute the command above on a different host system with the following ```tinyoctl``` flag in addition:
 ```sh
- -ip [IP of another node]
+ -ip [IP of any other existing node]
 ```
 
 Here is an **example** to create 1 container with 1 port & 2 mounts:
