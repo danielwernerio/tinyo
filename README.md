@@ -6,7 +6,7 @@
  </span>
 </blockquote>
 
-**TinyOrchestrator** - A minimal Hybrid Cloud Orchestrator.
+**TIO** - A minimal Hybrid Cloud Orchestrator.
 It's currently in an early **alpha** state.
 We're working on the first safe **single node localhost version** for Linux & MacOS.
 
@@ -34,14 +34,14 @@ sh curl tinyo.io/get | bash
  </span>
 </blockquote>
 
-⚠️ The current alpha version of TinyO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
+⚠️ The current alpha version of TIO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
 
-Running TinyO **requires root** due to the use of **Linux namespaces**, pivot_root, mounting filesystems, modifying network interfaces and so on.
-Ensure you have the necessary permissions and understand the **security implications** before using TinyO Alpha.
+Running TIO **requires root** due to the use of **Linux namespaces**, pivot_root, mounting filesystems, modifying network interfaces and so on.
+Ensure you have the necessary permissions and understand the **security implications** before using TIO Alpha.
 
 ## Usage
 
-TinyO uses **minimal Statefiles** in tandem with [tinyoctl](https://github.com/pure-linux/tinyoctl).
+TIO uses **minimal Statefiles** in tandem with [tinyoctl](https://github.com/pure-linux/tinyoctl).
 
 First **setup** the first cluster **node** via ```tinyoctl``` cli (alias **tc**) by providing a network name, username & password of your initial admin user:
 ```sh
@@ -104,7 +104,7 @@ The [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the siz
 
 #### Docker Desktop
 
-- **Speed**: Be faster. (Container/TinyO App startup, tinyoctl execution, WIP)
+- **Speed**: Be faster. (Container/TIO App startup, tinyoctl execution, WIP)
 - **Accessibility**: Better GUI (lean, clean & fancy)
 - WIP
 
@@ -178,7 +178,7 @@ We are very grateful for every GitHub Sponsor, but ⭐️ helps a lot, too!
 
 ### Visionaries
 
-The people that are listed here made important direct and/or indirect contributions to the vision of TinyO. It is very important for us to document any credit regarding our very kind contributors of various kinds and to give them their individual fair stake.
+The people that are listed here made important direct and/or indirect contributions to the vision of TIO. It is very important for us to document any credit regarding our very kind contributors of various kinds and to give them their individual fair stake.
 
 - Maybe you? [![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ)
 
