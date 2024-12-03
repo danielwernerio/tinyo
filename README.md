@@ -1,12 +1,12 @@
 # 𐬺 TinyO
 
+**TIO** - A minimal Hybrid Cloud Orchestrator.
+
 <blockquote>
  <span>
     It's tiny, but it's fast.
  </span>
 </blockquote>
-
-**TIO** - A minimal Hybrid Cloud Orchestrator.
 
 It's currently in an early **alpha** state.
 We're working on the first safe **single node localhost version** for Linux & MacOS.
