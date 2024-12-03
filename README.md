@@ -12,7 +12,7 @@ We're working hard on the first safe **single node localhost version** for 🐧 
 
 Currently about **350** code lines for the [features/runtime/core.rs][src-features-runtime-core.rs].
 Fell free to take a look at the [Runtime Core Architecture][docs-runtime-core-readme.md].
-Please give the **community feedback** about your opinion ([Issues][repo-issues]/[Commits][repo-commits]/[Discussions][repo-discussions]).
+Please give the **community feedback** about your opinion ([Issues](github.com/pure-linux/tinyo/issues)/[Commits](github.com/pure-linux/tinyo/commits)/[Discussions](github.com/pure-linux/tinyo/discussions)).
 
 **MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
 
@@ -151,9 +151,6 @@ The people that are listed here made important direct and/or indirect contributi
 
 Pure-Linux.com | Delivering to the open-source community what matters most.
 
-[repo-issues]: github.com/pure-linux/tinyo/issues
-[repo-commits]: github.com/pure-linux/tinyo/commits
-[repo-discussions]: github.com/pure-linux/tinyo/discussions
 [discord]: https://discord.gg/ERKBk6ArnQ
 [src-features-runtime-core.rs]: /src/features/runtime/core.rs
 [docs-runtime-core-readme.md]: /docs/runtime/core/README.md
