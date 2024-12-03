@@ -61,7 +61,7 @@ The [features/runtime/core.rs][src-features-runtime-core.rs] currently has the s
 
 ## Roadmap
 
-##### Phase 1: Solve localhost environment
+### Phase 1: Solve localhost environment
 
 - Minimal prototype
   - Download & start alpine container **faster** than **Docker** with low-level libs,
