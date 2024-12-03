@@ -45,12 +45,12 @@ TinyO uses **minimal Statefiles** in tandem with [tinyoctl](https://github.com/p
 
 First **setup** the first cluster **node** via ```tinyoctl``` cli (alias **tc**) by providing a network name, username & password of your initial admin user:
 ```sh
-  tc ++ -net [network_name] -u [admin_username] -p [admin_password]
+tc ++ -net [network_name] -u [admin_username] -p [admin_password]
 ```
 
 To **add** more **nodes** just execute the command above on a different host system with the following ```tinyoctl``` flag in addition:
 ```sh
-  -ip [IP of any other existing node]
+-ip [IP of any other existing node]
 ```
 
 To **isolate containers** just **create** additional **clusters**. A container has **network access** to **any** other container in one cluster.
@@ -58,18 +58,18 @@ To **isolate containers** just **create** additional **clusters**. A container h
 Here is an **example** to create 1 container with 1 port & 2 mounts:
 
 ```sh
-  tc + examples/basic/alpine-1.yml
+tc + alpine-1.yml
 ```
 
 ```yaml
-  # alpine-1.yml
-  container: "alpine:latest"
-  port: 8080
-  mounts:
-    - source: "/etc/hosts"
-      target: "/mnt/hosts"
-    - source: "/tmp/local-config"
-      target: "/config"
+# Source: github.com/pure-linux/tinyoctl/examples/basic/alpine-1.yml
+container: "alpine:latest"
+port: 8080
+mounts:
+  - source: "/etc/hosts"
+    target: "/mnt/hosts"
+  - source: "/tmp/local-config"
+    target: "/config"
 ```
 
 ## Architecture
