@@ -9,6 +9,7 @@
 **TinyOrchestrator** - A minimal & easy to use Hybrid Cloud Orchestrator.
 It is currently in an **early alpha** state.
 We're working hard on the first safe **single node localhost version** for **Linux** & **MacOS**.
+
 Feel free to [![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ).
 
 ## Quickstart
@@ -19,6 +20,7 @@ sh curl tinyo.io/get | bash
 ```
 
 ⚠️ Use the current alpha version of TinyO only in a controlled environment, such as a **virtual machine** or container (currently not supported) to prevent **unintended side effects** on your **host system**.
+
 Running TinyO **requires root** due to the use of Linux namespaces, pivot_root, mounting filesystems, modifying network interfaces and so on.
 Ensure you have the necessary permissions and understand the **security implications** before using TinyO Alpha.
 
