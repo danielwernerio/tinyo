@@ -11,9 +11,7 @@ It is currently in an early **alpha** state.
 We're working hard on the first safe **single node localhost version** for 🐧 & 🍎.
 
 Currently about **350** code lines for the [features/runtime/core.rs][src-features-runtime-core.rs].
-
 Feel free to take a look at the [Runtime Core Architecture][docs-runtime-core-readme.md].
-
 Please give the **community feedback** about your opinion ([Issues](https://github.com/pure-linux/tinyo/issues)/[Commits](https://github.com/pure-linux/tinyo/commits)/[Discussions](https://github.com/pure-linux/tinyo/discussions)).
 
 **MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
