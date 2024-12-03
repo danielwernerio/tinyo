@@ -50,7 +50,7 @@ mounts:
 
 ## Architecture
 
-The system has the following 3 main components. [tinyo-ctl](https://github.com/pure-linux/tinyo-ctl) interacts with [tinyo-node](https://github.com/pure-linux/tinyo-node) to start [tinyo-runtime-container](https://github.com/pure-linux/tinyo-runtime-container).
+The system has the following 3 main components. [tinyo-ctl](https://github.com/pure-linux/tinyoctl) interacts with [tinyo-node](https://github.com/pure-linux/tinyonode) to start [tinyo-runtime-container](https://github.com/pure-linux/tinyort).
 Don't worry about master/worker nodes and so on. The system operates similarly to a **mesh** topology:
 
 - [tinyo-ctl](https://github.com/pure-linux/tinyo-ctl): Contains cli and packages intended for use by client programs.
