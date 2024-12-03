@@ -56,15 +56,15 @@ configurable via a **minimal Statefile** (`yml`).
  </span>
 </blockquote>
 
-## Comparisons
+### Comparisons
 
-### Docker Desktop
+#### Docker Desktop
 
 - **Speed**: Be faster. (Container/TinyO App startup, tinyoctl execution, WIP)
 - **Accessibility**: Better GUI (lean, clean & fancy)
 - WIP
 
-### Kubernetes
+#### Kubernetes
 
 We aim to **simplify** known K8s difficulties step by step.
 The goal is to **support important use cases** & **workflows** for which K8s is often used today.
@@ -117,17 +117,17 @@ Our mission is to create a **community-driven Linux ecosystem** that ensures fai
 - **Decentralized Governance**: Token holders actively participate in shaping the project's direction through votes, empowering contributors to drive innovation.
 - **Low Contribution Barriers**: We aim to make contributions seamless and rewarding, both on GitHub and beyond.
 
-#### Important IP contributors
+### Important IP contributors
 
 - [GitHub username] [IP Summary]
 
-#### Financial Sponsors
+### Financial Sponsors
 
 We are very grateful for every GitHub Sponsor, but ⭐️ helps a lot, too!
 
 - [GitHub username]
 
-#### Visionaries
+### Visionaries
 
 The people that are listed here made important direct and/or indirect contributions to the vision of TinyO. It is very important for us to document any credit regarding our very kind contributors of various kinds and to give them their individual fair stake.
 
