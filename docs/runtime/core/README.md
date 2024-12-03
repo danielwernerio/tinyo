@@ -6,6 +6,8 @@
 
 The TinyO container runtime leverages several Linux libraries and features to implement containerization at a low level. Below is a list of the core components and their purposes:
 
+The code is located here: [features/runtime/core.rs][src-features-runtime-core.rs].
+
 - **Linux Namespaces** (`unshare`, `CloneFlags`)
 Used to isolate the container's process from the host system by creating separate namespaces for PID, network, UTS (hostname), and mount points. This provides the basic building blocks for process isolation in Linux.
 
@@ -26,3 +28,5 @@ Allows the container to have its own hostname, providing isolation at the UTS (U
 
 - **Proc and Sys Filesystems** (`proc`, `sysfs`)
 These are mounted inside the container to provide system-level information and kernel interfaces specific to the container's process namespace. `/proc` is essential for process-related metadata, while `/sys` is used for interacting with kernel features.
+
+[src-features-runtime-core.rs]: src/features/runtime/core.rs
