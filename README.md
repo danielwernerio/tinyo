@@ -10,7 +10,7 @@
 It is currently in an early **alpha** state.
 We're working hard on the first safe **single node localhost version** for **Linux** & **MacOS**.
 
-Currently **332** code lines.
+Currently **332** code lines for runtime core.
 
 **MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
 
