@@ -151,9 +151,9 @@ The people that are listed here made important direct and/or indirect contributi
 
 Pure-Linux.com | Delivering to the open-source community what matters most.
 
-[repo-issues]: /issues
-[repo-commits]: /commits
-[repo-discussions]: /discussions
+[repo-issues]: github.com/pure-linux/tinyo/issues
+[repo-commits]: github.com/pure-linux/tinyo/commits
+[repo-discussions]: github.com/pure-linux/tinyo/discussions
 [discord]: https://discord.gg/ERKBk6ArnQ
 [src-features-runtime-core.rs]: /src/features/runtime/core.rs
 [docs-runtime-core-readme.md]: /docs/runtime/core/README.md
