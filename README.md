@@ -10,8 +10,6 @@
 It's currently in an early **alpha** state.
 We're working on the first safe **single node localhost version** for Linux & MacOS.
 
-Currently about **350** code lines for the [features/runtime/core.rs][src-features-runtime-core.rs].
-Feel free to take a look at the [Runtime Core Architecture][docs-runtime-core-readme.md].
 Please give the **community feedback** about your opinion regarding the development ([Issues](https://github.com/pure-linux/tinyo/issues)/[Commits](https://github.com/pure-linux/tinyo/commits)/[Discussions](https://github.com/pure-linux/tinyo/discussions)).
 
 **MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
@@ -32,10 +30,15 @@ Ensure you have the necessary permissions and understand the **security implicat
 
 ## Usage
 
-TinyO uses **minimal Statefiles** and operates similarly to a **mesh** topology. Don't worry about master/worker nodes and so on. 
-Here is an example with 1 Container, 1 Port & 2 Mounts:
+TinyO uses **minimal Statefiles** combined with a simple [tinyo-ctl](https://github.com/pure-linux/tinyo-ctl). 
+Here is an example to create 1 container with 1 port & 2 mounts:
+
+```sh
+tinyo + examples/basic/alpine-1.yml
+```
 
 ```yaml
+# alpine-1.yml
 container: "alpine:latest"
 port: 8080
 mounts:
@@ -44,6 +47,17 @@ mounts:
   - source: "/tmp/local-config"
     target: "/config"
 ```
+
+## Architecture
+
+The system has the following 3 main components. [tinyo-ctl](https://github.com/pure-linux/tinyo-ctl) interacts with [tinyo-node](https://github.com/pure-linux/tinyo-node) to start [tinyo-runtime-container](https://github.com/pure-linux/tinyo-runtime-container).
+Don't worry about master/worker nodes and so on. The system operates similarly to a **mesh** topology:
+
+- [tinyo-ctl](https://github.com/pure-linux/tinyo-ctl): Contains cli and packages intended for use by client programs.
+- [tinyo-node](https://github.com/pure-linux/tinyo-node): Controller which is running on every cluster node.
+- [tinyo-runtime-container](https://github.com/pure-linux/tinyo-runtime-container): Container runtime
+
+The [features/runtime/core.rs][src-features-runtime-core.rs] currently has the size of about **350** code lines. Take a look at the [Runtime Core Architecture][docs-runtime-core-readme.md].
 
 ## Roadmap
 
