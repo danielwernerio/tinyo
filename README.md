@@ -8,7 +8,7 @@
 
 **TinyOrchestrator** - A minimal Hybrid Cloud Orchestrator.
 It's currently in an early **alpha** state.
-We're working on the first safe **single node localhost version** for 🐧 & 🍎.
+We're working on the first safe **single node localhost version** for Linux & MacOS.
 
 Currently about **350** code lines for the [features/runtime/core.rs][src-features-runtime-core.rs].
 Feel free to take a look at the [Runtime Core Architecture][docs-runtime-core-readme.md].
@@ -32,8 +32,7 @@ Ensure you have the necessary permissions and understand the **security implicat
 
 ## Usage
 
-TinyO uses **minimal Statefiles** and operates similarly to a **mesh** topology.
-Don't worry about master/worker nodes and so on. 
+TinyO uses **minimal Statefiles** and operates similarly to a **mesh** topology. Don't worry about master/worker nodes and so on. 
 Here is an example with 1 Container, 1 Port & 2 Mounts:
 
 ```yaml
