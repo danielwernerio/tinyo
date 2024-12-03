@@ -32,7 +32,7 @@ Ensure you have the necessary permissions and understand the **security implicat
 
 TinyO uses **minimal Statefiles** in tandem with [tinyoctl](https://github.com/pure-linux/tinyoctl).
 
-First **setup** the first cluster **node** by providing a network name, username & password of your initial admin user.
+First **setup** the first cluster **node** by providing a network name, username & password of your initial admin user:
 ```sh
 tinyo ++ -net [network_name] -u [admin_username] -p [admin_password]
 ```
