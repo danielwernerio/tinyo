@@ -53,9 +53,9 @@ mounts:
 The system has the following 3 main components. [tinyoctl](https://github.com/pure-linux/tinyoctl) interacts with [tinyonode](https://github.com/pure-linux/tinyonode) to start [tinyort](https://github.com/pure-linux/tinyort).
 Don't worry about master/worker nodes and so on. The system operates similarly to a **mesh** topology:
 
-- [tinyo-ctl](https://github.com/pure-linux/tinyo-ctl): Contains cli and packages intended for use by client programs.
-- [tinyo-node](https://github.com/pure-linux/tinyo-node): Controller which is running on every cluster node.
-- [tinyo-runtime-container](https://github.com/pure-linux/tinyo-runtime-container): Container runtime
+- [tinyoctl](https://github.com/pure-linux/tinyo-ctl): Contains cli and packages intended for use by client programs.
+- [tinyonode](https://github.com/pure-linux/tinyo-node): Controller which is running on every cluster node.
+- [tinyort](https://github.com/pure-linux/tinyo-runtime-container): Container runtime
 
 The [features/runtime/core.rs][src-features-runtime-core.rs] currently has the size of about **350** code lines. Take a look at the [Runtime Core Architecture][docs-runtime-core-readme.md].
 
