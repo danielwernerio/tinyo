@@ -10,7 +10,8 @@
 It is currently in an early **alpha** state.
 We're working hard on the first safe **single node localhost version** for **Linux** & **MacOS**.
 
-Currently **332** code lines for runtime core.
+Currently about **350** code lines for the [runtime core][src-features-runtime-core.rs].
+Please take a look at the [Runtime Core Architecture][docs-runtime-core-readme.md] and feel free to give feedback about its current state (Issues/Commits/Discussions).
 
 **MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
 
@@ -88,6 +89,8 @@ The goal is to **support important use cases** & **workflows** for which K8s is 
 - **Monitoring**: Best possible dashboard visualizations (Inspiration: github.com/k8svisual/vpk)
 - WIP
 
+---
+
 ## PureLinux DAO
 
 All IP (Code, ..) of PureLinux is owned by the DAO and the DAO is owned by the contributors of the DAO.
@@ -148,3 +151,5 @@ The people that are listed here made important direct and/or indirect contributi
 Pure-Linux.com | Delivering to the open-source community what matters most.
 
 [discord]: https://discord.gg/ERKBk6ArnQ
+[docs-runtime-core-readme.md]: docs/runtime/core/README.md
+[src-features-runtime-core.rs]: src/features/runtime/core.rs
