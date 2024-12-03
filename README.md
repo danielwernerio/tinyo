@@ -12,7 +12,11 @@ We're working on the first safe **single node localhost version** for Linux & Ma
 
 Please give the **community feedback** about your opinion regarding the development ([Issues](https://github.com/pure-linux/tinyo/issues)/[Commits](https://github.com/pure-linux/tinyo/commits)/[Discussions](https://github.com/pure-linux/tinyo/discussions)).
 
-**MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
+<blockquote>
+ <span>
+    We solve K8s complexities.
+ </span>
+</blockquote>
 
 Feel free to [![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ).
 
@@ -66,9 +70,9 @@ Don't worry about master/worker nodes and so on. The system operates similarly t
 
 - [tinyoctl](https://github.com/pure-linux/tinyoctl): Contains cli and packages intended for use by client programs.
 - [tinyonode](https://github.com/pure-linux/tinyonode): Controller which is running on every cluster node.
-- [tinyort](https://github.com/pure-linux/tinyort): Container runtime
+- [tinyort](https://github.com/pure-linux/tinyort): Container runtime ([Core Architecture][tinyort-docs-utils-core-readme.md])
 
-The [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the size of about **350** code lines. Take a look at the [Runtime Core Architecture][tinyort-docs-utils-core-readme.md].
+The [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the size of about **350** code lines. The **MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
 
 ## Roadmap
 
