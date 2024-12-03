@@ -46,6 +46,8 @@ To **add** more **nodes** just execute the command above on a different host sys
  -ip [IP of any other existing node]
 ```
 
+To **isolate containers** just **create** additional **clusters**. A container has **network access** to **any** other container in one cluster.
+
 Here is an **example** to create 1 container with 1 port & 2 mounts:
 
 ```sh
