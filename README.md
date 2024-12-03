@@ -163,5 +163,5 @@ The people that are listed here made important direct and/or indirect contributi
 Pure-Linux.com | Delivering to the open-source community what matters most.
 
 [discord]: https://discord.gg/ERKBk6ArnQ
-[tinyort-src-utils-core.rs]: https://github.com/pure-linux/tinyort/src/utils/core.rs
-[tinyort-docs-utils-core-readme.md]: https://github.com/pure-linux/tinyort/docs/utils/README.md
+[tinyort-src-utils-core.rs]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/src/utils/core.rs
+[tinyort-docs-utils-core-readme.md]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/docs/utils/core/README.md
