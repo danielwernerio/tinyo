@@ -29,4 +29,4 @@ Allows the container to have its own hostname, providing isolation at the UTS (U
 - **Proc and Sys Filesystems** (`proc`, `sysfs`)
 These are mounted inside the container to provide system-level information and kernel interfaces specific to the container's process namespace. `/proc` is essential for process-related metadata, while `/sys` is used for interacting with kernel features.
 
-[src-features-runtime-core.rs]: src/features/runtime/core.rs
+[src-features-runtime-core.rs]: /src/features/runtime/core.rs
