@@ -30,9 +30,19 @@ Ensure you have the necessary permissions and understand the **security implicat
 
 ## Usage
 
-TinyO uses **minimal Statefiles** combined with a simple [tinyoctl](https://github.com/pure-linux/tinyoctl). 
+TinyO uses **minimal Statefiles** in tandem with [tinyoctl](https://github.com/pure-linux/tinyoctl).
 
-Here is an example to create 1 container with 1 port & 2 mounts:
+First **setup** the first cluster **node** by providing a network name, username & password of your initial admin user.
+```sh
+tinyo ++ -net [network_name] -u [admin_username] -p [admin_password]
+```
+
+To **add** more **nodes** just execute the command above on a different host system with the following ```tinyo``` flag in addition:
+```sh
+ -ip [IP of another node]
+```
+
+Here is an **example** to create 1 container with 1 port & 2 mounts:
 
 ```sh
 tinyo + examples/basic/alpine-1.yml
@@ -51,7 +61,7 @@ mounts:
 
 ## Architecture
 
-The system has the following 3 main components. [tinyoctl](https://github.com/pure-linux/tinyoctl) interacts with [tinyonode](https://github.com/pure-linux/tinyonode) to start [tinyort](https://github.com/pure-linux/tinyort).
+The system has the following **3 main components**. [tinyoctl](https://github.com/pure-linux/tinyoctl) interacts with [tinyonode](https://github.com/pure-linux/tinyonode) to start [tinyort](https://github.com/pure-linux/tinyort).
 Don't worry about master/worker nodes and so on. The system operates similarly to a **mesh** topology:
 
 - [tinyoctl](https://github.com/pure-linux/tinyoctl): Contains cli and packages intended for use by client programs.
