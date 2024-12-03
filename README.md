@@ -37,7 +37,7 @@ First **setup** the first cluster **node** via ```tinyoctl``` cli by providing a
 tinyoctl ++ -net [network_name] -u [admin_username] -p [admin_password]
 ```
 
-To **add** more **nodes** just execute the command above on a different host system with the following ```tinyo``` flag in addition:
+To **add** more **nodes** just execute the command above on a different host system with the following ```tinyoctl``` flag in addition:
 ```sh
  -ip [IP of another node]
 ```
