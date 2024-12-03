@@ -25,7 +25,7 @@ sh curl tinyo.io/get | bash
 
 ⚠️ The current alpha version of TinyO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
 
-Running TinyO **requires root** due to the use of Linux namespaces, pivot_root, mounting filesystems, modifying network interfaces and so on.
+Running TinyO **requires root** due to the use of **Linux namespaces**, pivot_root, mounting filesystems, modifying network interfaces and so on.
 Ensure you have the necessary permissions and understand the **security implications** before using TinyO Alpha.
 
 ## Usage
