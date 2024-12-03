@@ -7,10 +7,11 @@
 </blockquote>
 
 **TinyOrchestrator** - A minimal & easy to use Hybrid Cloud Orchestrator.
-It is currently in an **early alpha** state.
+It is currently in an early **alpha** state.
 We're working hard on the first safe **single node localhost version** for **Linux** & **MacOS**.
 
-Currently **332** Rust code lines.
+Currently **332** code lines.
+
 **MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
 
 Feel free to [![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ).
@@ -22,7 +23,7 @@ Just execute & you're ready to orchestrate on any platform (coming soon):
 sh curl tinyo.io/get | bash
 ```
 
-⚠️ Use the current alpha version of TinyO only in a controlled environment, such as a **virtual machine** or container (currently not supported) to prevent **unintended side effects** on your **host system**.
+⚠️ The current alpha version of TinyO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
 
 Running TinyO **requires root** due to the use of Linux namespaces, pivot_root, mounting filesystems, modifying network interfaces and so on.
 Ensure you have the necessary permissions and understand the **security implications** before using TinyO Alpha.
@@ -33,7 +34,6 @@ TinyO uses **minimal Statefiles**.
 Here is an example with 1 Container, 1 Port & 2 Mounts:
 
 ```yaml
-# Example: 1 Container + 1 Port + 2 Mounts
 container: "alpine:latest"
 port: 8080
 mounts:
@@ -57,7 +57,7 @@ configurable via a **minimal Statefile** (`yml`).
 
 <blockquote>
  <span>
-    Developers want simple, but highly effective tools that reduce infrastructure complexity.
+    Developers want simple, but highly effective tools that reduce (local) infrastructure complexity.
  </span>
 </blockquote>
 
@@ -72,6 +72,7 @@ configurable via a **minimal Statefile** (`yml`).
 #### Kubernetes
 
 We aim to **simplify** known K8s difficulties step by step.
+
 The goal is to **support important use cases** & **workflows** for which K8s is often used today.
 
 - **Config**: Minimal Statefiles (start with one config line if wanted)
