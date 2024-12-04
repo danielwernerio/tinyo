@@ -10,7 +10,7 @@
   </p>
 </div>
 
-**TIO** - An extremely **simple** cloud-native container **orchestrator** that is trying to be an Rust alternative to very complex Golang solutions like [K8s][kubernetes.io].
+**TIO** - An extremely **simple** cloud-native container **orchestrator** that is trying to be a [Rust][rust-lang.org] alternative to more complex solutions like [K8s][kubernetes.io] ([Golang][go.dev]).
 
 <blockquote>
  <span>
@@ -195,7 +195,7 @@ The people that are listed here made important direct and/or indirect contributi
 
 ---
 
-Pure-Linux.com | Delivering to the open-source community what matters most.
+PureLinux | Delivering pure Linux to the world.
 
 [repo-issues]: https://github.com/pure-linux/tinyo/issues
 [repo-commits]: https://github.com/pure-linux/tinyo/commits
@@ -206,4 +206,6 @@ Pure-Linux.com | Delivering to the open-source community what matters most.
 [tinyort]: https://github.com/pure-linux/tinyort
 [tinyort-src-utils-core.rs]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/src/utils/core.rs
 [tinyort-docs-utils-core-readme.md]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/docs/utils/core/README.md
+[rust-lang.org]: https://rust-lang.org
 [kubernetes.io]: https://kubernetes.io
+[go.dev]: https://go.dev
