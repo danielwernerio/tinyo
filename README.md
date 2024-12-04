@@ -1,13 +1,16 @@
-# 𐬺 TinyO
-
-<p align="center">
-    <a href="#Kubernetes"><b>Why</b></a> •
-    <a href="#Quickstart"><b>Quickstart</b></a> •
+<div align="center">
+  <img width="100" height="100" src="https://avatars.githubusercontent.com/u/190339082" >
+  <h2>𐬺 TinyO</h2>
+  <h5>Next level orchestration.</h5>
+  <p align="center">
+    <a href="#vision"><b>Why</b></a> •
+    <a href="#quickstart"><b>Quickstart</b></a> •
     <a href="https://discord.gg/ERKBk6ArnQ" target="_blank"><b>Discord</b></a> •
-    <a href="#" target="_blank"><b>𝕏</b></a>
-</p>
+    <a href="https://x.com/PureLinux" target="_blank">𝕏</a>
+  </p>
+</div>
 
-**TIO** - An extremely **simple** cloud-native container **orchestrator** that is trying to be an alternative to very complex solutions like [K8s][kubernetes.io].
+**TIO** - An extremely **simple** cloud-native container **orchestrator** that is trying to be an Rust alternative to very complex Golang solutions like [K8s][kubernetes.io].
 
 <blockquote>
  <span>
@@ -49,7 +52,7 @@ Ensure you have the necessary permissions and understand the **security implicat
  </span>
 </blockquote>
 
-TIO uses **minimal Statefiles** in tandem with [tinyoctl][tinyoctl].
+TIO uses **minimal Statefiles** (```yml```) which are managed via [tinyoctl][tinyoctl] cli.
 
 First **setup** the first cluster **node** via ```tinyoctl``` cli (alias **tio**) by providing a network name, username & password of your initial admin user:
 ```sh
