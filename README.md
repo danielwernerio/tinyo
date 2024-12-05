@@ -18,8 +18,6 @@
  </span>
 </blockquote>
 
-[Go vs. Rust performance comparison pic(s)]
-
 It's currently in an early **alpha** state.
 We're working on the first safe single node **localhost version** for **Linux®** & **MacOS®**.
 
@@ -87,11 +85,17 @@ mounts:
 
 ## Architecture
 
+<blockquote>
+ <span>
+    In a nutshell TIO is just an orchestration of runtimes.
+ </span>
+</blockquote>
+
 The system has the following **3 main components**. [tinyoctl][tinyoctl] interacts with [tinyonode][tinyonode] to start [tinyort][tinyort].
 Don't worry about master/worker nodes and so on. The system operates similarly to a **mesh** topology:
 
 - [tinyoctl][tinyoctl]: Contains cli and packages intended for use by client programs.
-- [tinyonode][tinyonode]: Controller which is running on every cluster node.
+- [tinyonode][tinyonode]: Controller for each cluster node. Think of it as biolerplate code which is orchestrating the [runtime][tinyort](s).
 - [tinyort][tinyort]: Container runtime ([Core Architecture][tinyort-docs-utils-core-readme.md])
 
 The [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the size of about **350** code lines. The **MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
@@ -199,7 +203,7 @@ The people that are listed here made important direct and/or indirect contributi
 
 PureLinux | Delivering to the open-source community what matters most.
 
-Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries. 
+Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries.
 
 [repo-issues]: https://github.com/pure-linux/tinyo/issues
 [repo-commits]: https://github.com/pure-linux/tinyo/commits
