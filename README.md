@@ -18,6 +18,8 @@
  </span>
 </blockquote>
 
+[Go vs. Rust performance comparison pic(s)]
+
 It's currently in an early **alpha** state.
 We're working on the first safe single node **localhost version** for **Linux** & **MacOS**.
 
@@ -195,7 +197,7 @@ The people that are listed here made important direct and/or indirect contributi
 
 ---
 
-PureLinux | Delivering pure Linux to the world.
+PureLinux | Delivering to the open-source community what matters most.
 
 [repo-issues]: https://github.com/pure-linux/tinyo/issues
 [repo-commits]: https://github.com/pure-linux/tinyo/commits
