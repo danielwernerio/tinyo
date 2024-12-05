@@ -21,6 +21,16 @@
 It's currently in an early **alpha** state.
 We're working on the first safe single node **localhost version** for **Linux®** & **MacOS®**.
 
+### Challenge
+
+If you're able to delete lines and/or breaking the [runtime][tinyort] in any meaningful way you will be listed below (<a href="#code-wizards">Code Wizards</a>).
+
+<blockquote>
+ <span>
+    If you can break it, you truly understand it.
+ </span>
+</blockquote>
+
 Please give the **community feedback** about your opinion regarding the development of TIO ([Issues][repo-issues]/[Commits][repo-commits]/[Discussions][repo-discussions]).
 
 <blockquote>
@@ -201,9 +211,9 @@ We are very grateful for every GitHub Sponsor, but ⭐️ helps a lot, too!
 
 - [GitHub username]
 
-### Visionaries
+### Code Wizards
 
-The people that are listed here made important direct and/or indirect contributions to the vision of TIO. It is very important for us to document any credit regarding our very kind contributors of various kinds and to give them their individual fair stake.
+The people that are listed below made important direct and/or indirect contributions to the vision of TIO. It is very important for us to document any credit regarding our very kind contributors of various kinds and to give them their individual fair stake.
 
 - Maybe you? [![pure-linux-discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ)
 
