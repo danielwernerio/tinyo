@@ -112,6 +112,24 @@ Don't worry about master/worker nodes and so on. The system operates similarly t
 
 The [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the size of about **350** code lines. The **MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
 
+### Unique Runtime Features
+
+#### Optimized Intra-Host Container Communication
+
+TIO introduces an innovative feature for optimizing container communication on the same host, reducing overhead and improving performance. Unlike traditional networking approaches that rely on full TCP/IP stacks or ingress mechanisms, this runtime leverages direct communication methods tailored for Linux architectures.
+
+##### Key Features
+- **Unix Domain Sockets (UDS)**: Enables fast and efficient inter-container communication without the overhead of TCP/IP. Each container communicates via UDS managed by the runtime.
+- **Shared Memory (shm)**: Facilitates low-latency data exchange by sharing memory regions between containers for intensive data transfers.
+- **Kernel Bypass with eBPF**: Utilizes eBPF for advanced packet routing and filtering, optimizing host-level communication pipelines.
+- **Direct Process Piping**: Supports lightweight communication using POSIX pipes for simpler IPC requirements.
+
+##### Benefits
+
+- **Performance Boost**: Drastically reduces network latency and overhead compared to standard container networking.
+- **Secure Isolation**: Maintains strict namespace isolation and access control to ensure container security.
+- **Customizability**: Designed for flexible implementation to fit diverse container workloads.
+
 ## Roadmap
 
 ### Phase 1: Solve localhost environment
@@ -203,6 +221,14 @@ Our mission is to create a **community-driven Linux® ecosystem** that ensures f
 - **Decentralized Governance**: Token holders actively participate in shaping the project's direction through votes, empowering contributors to drive innovation.
 - **Low Contribution Barriers**: We aim to make contributions seamless and rewarding, both on GitHub and beyond.
 
+### Monetarization
+
+Somehow the DAO needs to finance itself (the world is how it is..). Because of that we plan to implement the following monetarization strategies to pay the development of the open-source version of TIO:
+
+- [Dashboard][tinyodash] Pro (Local/Server) [one-time payment]
+- Managed services: [TIO Cloud][tinyocloud] Pro (based on [TIO Runtime][tinyort] Pro) [monthly payment]
+- Professional support offering for TIO Pro Services [monthly payment]
+
 ### Important IP contributors
 
 - [GitHub username] [IP Summary]
@@ -232,6 +258,8 @@ Linux® is the registered trademark of Linus Torvalds in the U.S. and other coun
 [tinyoctl]: https://github.com/pure-linux/tinyoctl
 [tinyonode]: https://github.com/pure-linux/tinyonode
 [tinyort]: https://github.com/pure-linux/tinyort
+[tinyodash]: https://github.com/pure-linux/tinyodash
+[tinyocloud]: https://github.com/pure-linux/tinyocloud
 [tinyort-src-utils-core.rs]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/src/utils/core.rs
 [tinyort-docs-utils-core-readme.md]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/docs/utils/core/README.md
 [rust-lang.org]: https://rust-lang.org
