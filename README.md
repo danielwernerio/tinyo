@@ -119,13 +119,21 @@ The [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the siz
 
 ### Comparisons
 
-#### Docker Desktop
+#### Local
+
+##### Docker Desktop
 
 - **Speed**: Be faster. (Container/TIO App startup, tinyoctl execution, WIP)
 - **Accessibility**: Better GUI (lean, clean & fancy)
 - WIP
 
-#### Kubernetes
+#### Cloud (Server)
+
+##### General
+
+- RAM/Memory bandwith is expensive. If we're Rust + tiny this could reduce cloud costs in general.
+
+##### Kubernetes
 
 We aim to **simplify** known K8s difficulties step by step.
 
