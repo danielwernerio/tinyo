@@ -214,7 +214,7 @@ We try to give **best possible credit to every contributor** who's bringing this
 </blockquote>
 
 At PureLinux, we try hard to build a decentralized autonomous organization to redefine how open-source **contributions** are **rewarded** and **governed**. We find this very important for the project to grow perfectly.
-For every **contribution**, each contributor receives **tokens** for the DAO, increasing their **financial stake** and/or **influence** in **polls**, including those shaping PureLinux [Product Roadmaps](#Roadmaps) and potential future developments.
+For every **contribution**, each contributor receives **tokens** for the DAO, increasing their **financial stake** and/or **influence** in **polls**, including those shaping PureLinux [Product Roadmaps](#Roadmap) and potential future developments.
 
 <blockquote>
  <span>
