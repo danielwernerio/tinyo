@@ -21,7 +21,7 @@
 [Go vs. Rust performance comparison pic(s)]
 
 It's currently in an early **alpha** state.
-We're working on the first safe single node **localhost version** for **Linux** & **MacOS**.
+We're working on the first safe single node **localhost version** for **Linux®** & **MacOS®**.
 
 Please give the **community feedback** about your opinion regarding the development of TIO ([Issues][repo-issues]/[Commits][repo-commits]/[Discussions][repo-discussions]).
 
@@ -43,7 +43,7 @@ sh curl tinyo.io/get | bash
 
 ⚠️ The current alpha version of TIO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
 
-Running TIO **requires root** due to the use of **Linux namespaces**, pivot_root, mounting filesystems, modifying network interfaces and so on.
+Running TIO **requires root** due to the use of **Linux® namespaces**, pivot_root, mounting filesystems, modifying network interfaces and so on.
 Ensure you have the necessary permissions and understand the **security implications** before using TIO Alpha.
 
 ## Usage
@@ -171,7 +171,7 @@ At PureLinux, we try hard to build a decentralized autonomous organization to re
  </span>
 </blockquote>
 
-Our mission is to create a **community-driven Linux ecosystem** that ensures fairness, transparency, and accessibility for all contributors.
+Our mission is to create a **community-driven Linux® ecosystem** that ensures fairness, transparency, and accessibility for all contributors.
 **Key features** of the organization will include:
 
 - **Reward Mechanisms**: Valid contributions are rewarded through a transparent token system, ensuring every contributor receives a fair stake based on their personal efforts.
@@ -198,6 +198,8 @@ The people that are listed here made important direct and/or indirect contributi
 ---
 
 PureLinux | Delivering to the open-source community what matters most.
+
+Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries. 
 
 [repo-issues]: https://github.com/pure-linux/tinyo/issues
 [repo-commits]: https://github.com/pure-linux/tinyo/commits
