@@ -192,7 +192,7 @@ The goal is to **support important use cases** & **workflows** for which K8s is 
 
 ## PureLinux DAO
 
-All IP (Code, ..) of PureLinux is owned by the DAO and the DAO is owned by the contributors of the DAO.
+All IP (Code, ..) of PureLinux is owned by the [DAO][pure-linux-dao] and the [DAO][pure-linux-dao] is owned by the [contributors][repo-contributors] of the [DAO][pure-linux-dao].
 
 <blockquote>
  <span>
@@ -214,7 +214,7 @@ We try to give **best possible credit to every contributor** who's bringing this
 </blockquote>
 
 At PureLinux, we try hard to build a decentralized autonomous organization to redefine how open-source **contributions** are **rewarded** and **governed**. We find this very important for the project to grow perfectly.
-For every **contribution**, each contributor receives **tokens** for the DAO, increasing their **financial stake** and/or **influence** in **polls**, including those shaping PureLinux [Product Roadmaps](#Roadmap) and potential future developments.
+For every **contribution**, each contributor receives **tokens** for the [DAO][pure-linux-dao], increasing their **financial stake** and/or **influence** in **polls**, including those shaping PureLinux [Product Roadmaps](#Roadmap) and potential future developments.
 
 <blockquote>
  <span>
@@ -222,17 +222,17 @@ For every **contribution**, each contributor receives **tokens** for the DAO, in
  </span>
 </blockquote>
 
-Our mission is to create a **community-driven Linux® ecosystem** that ensures fairness, transparency, and accessibility for all contributors.
+Our mission is to create a **community-driven Linux® ecosystem** that ensures fairness, transparency, and accessibility for all [contributors][repo-contributors].
 **Key features** of the organization will include:
 
 - **Reward Mechanisms**: Valid contributions are rewarded through a transparent token system, ensuring every contributor receives a fair stake based on their personal efforts.
 - **Quadratic Funding**: A funding mechanism that prioritizes community-backed initiatives, amplifying the impact of collective support.
-- **Decentralized Governance**: Token holders actively participate in shaping the project's direction through votes, empowering contributors to drive innovation.
+- **Decentralized Governance**: Token holders actively participate in shaping the project's direction through votes, empowering [contributors][repo-contributors] to drive innovation.
 - **Low Contribution Barriers**: We aim to make contributions seamless and rewarding, both on GitHub and beyond.
 
 ### Monetarization
 
-Somehow the DAO needs to finance itself (the world is how it is..). Because of that we plan to implement the following monetarization strategies to pay the development of the open-source version of TIO:
+Somehow the [DAO][pure-linux-dao] needs to finance itself (the world is how it is..). Because of that we plan to implement the following monetarization strategies to pay the development of the open-source version of TIO:
 
 - [Dashboard][tinyodash] Pro (Local/Server) [one-time payment]
 - Managed services: [TIO Cloud][tinyocloud] Pro (based on [TIO Runtime][tinyort] Pro) [monthly payment]
@@ -250,7 +250,7 @@ We are very grateful for every GitHub Sponsor, but ⭐️ helps a lot, too!
 
 ### Code Wizards
 
-The people that are listed below made important direct and/or indirect contributions to the vision of TIO. It is very important for us to document any credit regarding our very kind contributors of various kinds and to give them their individual fair stake.
+The people that are listed below made important direct and/or indirect contributions to the vision of TIO. It is very important for us to document any credit regarding our very kind [contributors][repo-contributors] of various kinds and to give them their individual fair stake.
 
 - Maybe you? [![pure-linux-discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ)
 
@@ -260,10 +260,12 @@ PureLinux | Delivering to the open-source community what matters most.
 
 Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries.
 
+[repo-contributors]: https://github.com/pure-linux/tinyo/graphs/contributors
 [repo-issues]: https://github.com/pure-linux/tinyo/issues
 [repo-commits]: https://github.com/pure-linux/tinyo/commits
 [repo-discussions]: https://github.com/pure-linux/tinyo/discussions
 [pure-linux-discord]: https://discord.gg/ERKBk6ArnQ
+[pure-linux-dao]: https://github.com/pure-linux/DAO
 [tinyoctl]: https://github.com/pure-linux/tinyoctl
 [tinyonode]: https://github.com/pure-linux/tinyonode
 [tinyort]: https://github.com/pure-linux/tinyort
