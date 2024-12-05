@@ -24,7 +24,7 @@ We're working on the first safe single node **localhost version** for **Linux®*
 
 ### Challenge
 
-If you're able to delete lines and/or breaking the [runtime][tinyort] in any meaningful way you will be listed below (<a href="#code-wizards">Code Wizards</a>). Please be kind, this is an early alpha.
+If you're able to delete lines and/or break the [runtime][tinyort] in any meaningful way you will be listed below (<a href="#code-wizards">Code Wizards</a>). Please be kind, this is an early alpha.
 
 <blockquote>
  <span>
