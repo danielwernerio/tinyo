@@ -110,7 +110,13 @@ Don't worry about master/worker nodes and so on. The system operates similarly t
 - [tinyonode][tinyonode]: Controller for each cluster node. Think of it as biolerplate code which is orchestrating the [runtime][tinyort](s).
 - [tinyort][tinyort]: Container runtime ([Core Architecture][tinyort-docs-utils-core-readme.md])
 
-The [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the size of about **350** code lines. The **MVP** should remain **below 1k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
+E.g. the [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the size of about **350** code lines. The **MVP** should remain **below 2-3k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
+
+To improve TIO and to make it completely accessible to the entire developer community, we introduced the following **3 additional components**:
+
+- [tinyoapt][tinyoapt]: Advanced Package Tool to simplify the setup of various applications within a cluster.
+- [tinyodash][tinyodash]: TIO Pro Dashboard for local development & cloud operations.
+- [tinyort-fuzzer][tinyort-fuzzer]: Partial automated Fuzzer for the TIO [container runtime][tinyort].
 
 ### Unique Runtime Features
 
@@ -258,6 +264,8 @@ Linux® is the registered trademark of Linus Torvalds in the U.S. and other coun
 [tinyoctl]: https://github.com/pure-linux/tinyoctl
 [tinyonode]: https://github.com/pure-linux/tinyonode
 [tinyort]: https://github.com/pure-linux/tinyort
+[tinyort-fuzzer]: https://github.com/pure-linux/tinyort-fuzzer
+[tinyoapt]: https://github.com/pure-linux/tinyoapt
 [tinyodash]: https://github.com/pure-linux/tinyodash
 [tinyocloud]: https://github.com/pure-linux/tinyocloud
 [tinyort-src-utils-core.rs]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/src/utils/core.rs
