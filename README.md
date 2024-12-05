@@ -205,6 +205,8 @@ We try to **scale the development with the community** so that the project achie
 Because the **codebase** is in general relatively **small**, one doesn't have to dive too deep into prebuilt structures to make valuable contributions.
 We try to give **best possible credit to every contributor** who's bringing this project to the world.
 
+### Process for Stake Distribution
+
 <blockquote>
  <span>
    It's not good for a project when someone digs themselves into a rabbit hole alone, because it makes it harder for others to join or contribute later.
@@ -212,6 +214,7 @@ We try to give **best possible credit to every contributor** who's bringing this
 </blockquote>
 
 At PureLinux, we try hard to build a decentralized autonomous organization to redefine how open-source **contributions** are **rewarded** and **governed**. We find this very important for the project to grow perfectly.
+For every **contribution**, each contributor receives **tokens** for the DAO, increasing their **financial stake** and/or **influence** in **polls**, including those shaping PureLinux [Product Roadmaps](#Roadmaps) and potential future developments.
 
 <blockquote>
  <span>
