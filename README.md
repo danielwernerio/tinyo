@@ -185,7 +185,7 @@ The goal is to **support important use cases** & **workflows** for which K8s is 
 - **Efficiency**: More RAM/IO efficient than K8s for similar tasks (less cloud costs)
 - **Security**: More stable runtime security
 - **Dynamicity**: etcd limitations
-- **Monitoring**: Best possible dashboard visualizations (Inspiration: github.com/k8svisual/vpk)
+- **Monitoring**: Best possible dashboard (visualizations) (E.g.: [k8svisual/vpk](https://github.com/k8svisual/vpk), WIP)
 - WIP
 
 ---
@@ -200,8 +200,8 @@ All IP (Code, ..) of PureLinux is owned by the [DAO][pure-linux-dao] and the [DA
  </span>
 </blockquote>
 
-The project development is still very new, please feel free to join our [pure-linux-discord][pure-linux-discord] for **open discussions**.
-We try to **scale the development with the community** so that the project achieves optimal momentum.
+The project development is still very new, feel free to [![pure-linux-discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ) for **open discussions** about container orchestration and so on.
+We try to **scale** the **development** **with** the **community** so that the project achieves optimal momentum.
 Because the **codebase** is in general relatively **small**, one doesn't have to dive too deep into prebuilt structures to make valuable contributions.
 We try to give **best possible credit to every contributor** who's bringing this project to the world.
 
