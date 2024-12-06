@@ -264,7 +264,7 @@ Linux® is the registered trademark of Linus Torvalds in the U.S. and other coun
 [repo-issues]: https://github.com/pure-linux/tinyo/issues
 [repo-commits]: https://github.com/pure-linux/tinyo/commits
 [repo-discussions]: https://github.com/pure-linux/tinyo/discussions
-[repo-docs-vision-comparisons-k8s-complexities.md]: ./docs/vision/comparisons/k8s/complexities.md
+[repo-docs-vision-comparisons-k8s-complexities.md]: https://github.com/pure-linux/tinyo/blob/release/alpha/0.0.1/docs/vision/comparisons/k8s/complexities.md
 [pure-linux-discord]: https://discord.gg/ERKBk6ArnQ
 [pure-linux-dao]: https://github.com/pure-linux/DAO
 [tinyoctl]: https://github.com/pure-linux/tinyoctl
