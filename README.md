@@ -29,6 +29,7 @@ We're working on the first safe single node **localhost version** for **Linux®*
 
 Check out the [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md] for an overview of the challenges we want to address, among others.
 <br/>
+<br/>
 
 ### 💥 Challenge
 
