@@ -20,9 +20,17 @@
 
 It's currently in an early **alpha** state.
 We're working on the first safe single node **localhost version** for **Linux®** & **MacOS®**.
+
+<blockquote>
+ <span>
+    TIO tries to tackle known K8s complexities.
+ </span>
+</blockquote>
+
+Check out the [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md] for an overview of the challenges we want to address, among others.
 <br/>
 
-### Challenge
+### 💥 Challenge
 
 If you're able to delete lines and/or break the [runtime][tinyort] in any meaningful way you will be listed below (<a href="#code-wizards">Code Wizards</a>). Please be kind, this is an early alpha.
 
@@ -34,12 +42,6 @@ If you're able to delete lines and/or break the [runtime][tinyort] in any meanin
 <br/>
 
 Please give the **community feedback** about your opinion regarding the development of TIO ([Issues][repo-issues]/[Commits][repo-commits]/[Discussions][repo-discussions]).
-
-<blockquote>
- <span>
-    We solve K8s complexities.
- </span>
-</blockquote>
 
 Feel free to [![pure-linux-discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ).
 
@@ -155,23 +157,20 @@ TIO introduces an innovative feature for optimizing container communication on t
 
 ### Comparisons
 
-#### Local
+#### General
 
-##### Docker Desktop
+- RAM/Memory bandwith is expensive. If we're Rust + tiny this could reduce cloud costs in general.
+
+#### Docker Desktop
 
 - **Speed**: Be faster. (Container/TIO App startup, tinyoctl execution, WIP)
 - **Accessibility**: Better GUI (lean, clean & fancy)
 - WIP
 
-#### Cloud (Server)
-
-##### General
-
-- RAM/Memory bandwith is expensive. If we're Rust + tiny this could reduce cloud costs in general.
-
-##### Kubernetes
+#### Kubernetes
 
 We aim to **simplify** known K8s difficulties step by step.
+To take a look at the most known challenges **jump to [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md]**.
 
 The goal is to **support important use cases** & **workflows** for which K8s is often used today.
 
@@ -264,6 +263,7 @@ Linux® is the registered trademark of Linus Torvalds in the U.S. and other coun
 [repo-issues]: https://github.com/pure-linux/tinyo/issues
 [repo-commits]: https://github.com/pure-linux/tinyo/commits
 [repo-discussions]: https://github.com/pure-linux/tinyo/discussions
+[repo-docs-vision-comparisons-k8s-complexities.md]: https://github.com/pure-linux/tinyo/blob/release/alpha/0.0.1/docs/vision/comparisons/k8s/complexities.md
 [pure-linux-discord]: https://discord.gg/ERKBk6ArnQ
 [pure-linux-dao]: https://github.com/pure-linux/DAO
 [tinyoctl]: https://github.com/pure-linux/tinyoctl
