@@ -10,7 +10,7 @@
   </p>
 </div>
 
-**TIO** - An extremely **simple** cloud-native container **orchestrator** that is trying to be a [Rust][rust-lang.org] alternative to more complex solutions like [K8s][kubernetes.io] ([Golang][go.dev]).
+**TIO** - An extremely **simple** cloud-native container **orchestrator** that is a [Rust][rust-lang.org] alternative to more complex solutions like [K8s][kubernetes.io] ([Golang][go.dev]).
 
 <blockquote>
  <span>
@@ -54,10 +54,12 @@ Just execute & you're ready to orchestrate on any platform (coming soon). This a
 sh curl tinyo.io/get | bash
 ```
 
-⚠️ The current alpha version of TIO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
+Deploy a **[VSCode Server][vscode-server]** with a user-selected **[Docker Hub][hub.docker.com]** image in just one click and a magic password using [tinyocloud][tinyocloud] (WIP).
 
 Running TIO **requires root** due to the use of **Linux® namespaces**, pivot_root, mounting filesystems, modifying network interfaces and so on.
 Ensure you have the necessary permissions and understand the **security implications** before using TIO Alpha.
+
+⚠️ The current alpha version of TIO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
 
 ## Usage
 
@@ -192,7 +194,7 @@ The goal is to **support important use cases** & **workflows** for which K8s is 
 
 ## PureLinux DAO
 
-There is a separate repository for the [DAO][pure-linux-dao].
+➡️ There is a separate repository for the [DAO][pure-linux-dao].
 
 ### Important IP contributors
 
@@ -214,9 +216,9 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 
 ---
 
-PureLinux | Delivering to the open-source community what matters most.
+**[PureLinux.org][purelinux.org]** | Delivering to the open-source community what matters most.
 
-Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries.
+###### Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries.
 
 [repo-contributors]: https://github.com/pure-linux/tinyo/graphs/contributors
 [repo-issues]: https://github.com/pure-linux/tinyo/issues
@@ -234,6 +236,9 @@ Linux® is the registered trademark of Linus Torvalds in the U.S. and other coun
 [tinyocloud]: https://github.com/pure-linux/tinyocloud
 [tinyort-src-utils-core.rs]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/src/utils/core.rs
 [tinyort-docs-utils-core-readme.md]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/docs/utils/core/README.md
+[purelinux.org]: https://purelinux.org
 [rust-lang.org]: https://rust-lang.org
 [kubernetes.io]: https://kubernetes.io
 [go.dev]: https://go.dev
+[hub.docker.com]: https://hub.docker.com
+[vscode-server]: https://code.visualstudio.com/docs/remote/vscode-server
