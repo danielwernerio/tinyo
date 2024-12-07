@@ -18,6 +18,35 @@
  </span>
 </blockquote>
 
+---
+
+- [Overview](#overview)
+  - [Challenge](#challenge)
+- [🏁 Quickstart](#-quickstart)
+- [☑️ Usage](#️-usage)
+- [Architecture](#architecture)
+  - [Components](#components)
+  - [Unique Runtime Features](#unique-runtime-features)
+    - [Optimized Intra-Host Container Communication](#optimized-intra-host-container-communication)
+      - [Key Features](#key-features)
+      - [Benefits](#benefits)
+- [Roadmap](#roadmap)
+  - [Phase 1: Solve localhost environment](#phase-1-solve-localhost-environment)
+- [Vision](#vision)
+  - [Comparisons](#comparisons)
+    - [General](#general)
+    - [Docker Desktop](#docker-desktop)
+    - [Kubernetes](#kubernetes)
+- [PureLinux DAO](#purelinux-dao)
+  - [Important IP contributors](#important-ip-contributors)
+  - [Financial Sponsors](#financial-sponsors)
+  - [1337 H4x0r](#1337-h4x0r)
+        - [Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries.](#linux-is-the-registered-trademark-of-linus-torvalds-in-the-us-and-other-countries)
+
+---
+
+## Overview
+
 It's currently in an early **alpha** state.
 We're working on the first safe single node **localhost version** for **Linux®** & **MacOS®**.
 
@@ -28,10 +57,9 @@ We're working on the first safe single node **localhost version** for **Linux®*
 </blockquote>
 
 Check out the [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md] for an overview of the challenges we want to address, among others.
-<br/>
-<br/>
+Please give the **community feedback** about your opinion regarding the development of TIO ([Issues][repo-issues]/[Commits][repo-commits]/[Discussions][repo-discussions]).
 
-### 💥 Challenge
+### Challenge
 
 If you're able to delete lines and/or break the [runtime][tinyort] in any meaningful way, you will be listed in [1337 H4x0r](#1337-h4x0r). Please be kind, this is an early alpha.
 
@@ -40,13 +68,10 @@ If you're able to delete lines and/or break the [runtime][tinyort] in any meanin
     If you can break it, you truly understand it.
  </span>
 </blockquote>
-<br/>
-
-Please give the **community feedback** about your opinion regarding the development of TIO ([Issues][repo-issues]/[Commits][repo-commits]/[Discussions][repo-discussions]).
 
 Feel free to [![pure-linux-discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ).
 
-## Quickstart
+## 🏁 Quickstart
 
 Just execute & you're ready to orchestrate on any platform (coming soon). This automatically **installs** ```tinyoctl``` & **initializes** a local **cluster** on the host system. **Be ready in seconds**:
 
@@ -61,7 +86,7 @@ Ensure you have the necessary permissions and understand the **security implicat
 
 ⚠️ The current alpha version of TIO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
 
-## Usage
+## ☑️ Usage
 
 <blockquote>
  <span>
@@ -108,12 +133,15 @@ mounts:
  </span>
 </blockquote>
 
-The system has the following **3 main components**. [tinyoctl][tinyoctl] interacts with [tinyonode][tinyonode] to start [tinyort][tinyort].
+### Components
+
+The system has the following **4 main components**. [tinyoctl][tinyoctl] interacts with [tinyonode][tinyonode] to start [tinyort][tinyort]. [tinyokv][tinyokv] is the data store for the TIO cluster [node(s)][tinyonode].
 Don't worry about master/worker nodes and so on. The system operates similarly to a **mesh** topology:
 
-- [tinyoctl][tinyoctl]: Contains cli and packages intended for use by client programs.
-- [tinyonode][tinyonode]: Controller for each cluster node. Think of it as biolerplate code which is orchestrating the [runtime][tinyort](s).
-- [tinyort][tinyort]: Container runtime ([Core Architecture][tinyort-docs-utils-core-readme.md])
+- **[tinyoctl][tinyoctl]**: Contains cli and packages intended for use by client programs.
+- **[tinyonode][tinyonode]**: Controller for each cluster node. Think of it as biolerplate code which is orchestrating the [runtime][tinyort](s).
+- **[tinyokv][tinyokv]**: A high performance distributed Key-Value store for [tinyonode][tinyonode] (WIP).
+- **[tinyort][tinyort]**: Container runtime ([Core Architecture][tinyort-docs-utils-core-readme.md])
 
 E.g. the [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the size of about **350** code lines. The **MVP** should remain **below 2-3k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
 
@@ -229,6 +257,7 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [pure-linux-dao]: https://github.com/pure-linux/DAO
 [tinyoctl]: https://github.com/pure-linux/tinyoctl
 [tinyonode]: https://github.com/pure-linux/tinyonode
+[tinyokv]: https://github.com/pure-linux/tinyokv
 [tinyort]: https://github.com/pure-linux/tinyort
 [tinyort-fuzzer]: https://github.com/pure-linux/tinyort-fuzzer
 [tinyoapt]: https://github.com/pure-linux/tinyoapt
