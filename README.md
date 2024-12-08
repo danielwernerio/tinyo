@@ -25,8 +25,8 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
 | Measurements                | TIO   | K8s | Docker Desktop |
 |-----------------------------|-------|-----|----------------|
 | Container Startup Time (alpine:x.y.z) [s] | WIP   | WIP | WIP            |
-| Cluster RAM Size [mb]       | **~96**   | **[~5,476][docs-k8s-ram-size]** | WIP            |
-| Cluster Disk Size [mb]      | **~48**   | **[~2,750][docs-k8s-binary-size]** | WIP            |
+| Cluster RAM Size [mb]       | **~288**   | **[~5,476][docs-k8s-ram-size]** | WIP            |
+| Cluster Disk Size [mb]      | **~144**   | **[~2,750][docs-k8s-binary-size]** | WIP            |
 | System Binary Size (total) [mb] | **~50**   | **[~2,770][docs-k8s-binary-size]** | WIP            |
 
 **System:** Macbook M[x] Pro (reboot + all apps closed)
