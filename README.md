@@ -12,14 +12,29 @@
 
 **TIO** - An extremely **simple** cloud-native container **orchestrator** that is a [Rust][rust-lang.org] alternative to [more complex][repo-docs-vision-comparisons-k8s-complexities.md] solutions like [K8s][kubernetes.io] ([Go][go.dev]).
 
+Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tinygrad.org].
+
+## Benchmark
+
 <blockquote>
  <span>
     It's tiny, but it's fast.
  </span>
 </blockquote>
 
+**System:** Macbook M[x] Pro (reboot + all apps closed)
+**Last update:** WIP
+
+| Measurements                | TIO   | K8s | Docker Desktop |
+|-----------------------------|-------|-----|----------------|
+| Container Startup Time (alpine:x.y.z) [s] | WIP   | WIP | WIP            |
+| Cluster RAM Size [mb]       | WIP   | WIP | WIP            |
+| Cluster Disk Size [mb]      | WIP   | WIP | WIP            |
+| System Binary Size (total) [mb] | WIP   | WIP | WIP            |
+
 ---
 
+- [Benchmark](#benchmark)
 - [☁️ Overview](#️-overview)
 - [💥 Features](#-features)
   - [Simplicity.](#simplicity)
@@ -317,6 +332,8 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [purelinux.org]: https://purelinux.org
 [rust-lang.org]: https://rust-lang.org
 [kubernetes.io]: https://kubernetes.io
+[tenstorrent.com]: https://tenstorrent.com
+[tinygrad.org]: https://tinygrad.org
 [etcd.io]: https://etcd.io
 [go.dev]: https://go.dev
 [hub.docker.com]: https://hub.docker.com
