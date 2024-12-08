@@ -22,16 +22,20 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
  </span>
 </blockquote>
 
+| Measurements                | TIO   | K8s | Docker Desktop |
+|-----------------------------|-------|-----|----------------|
+| Container Startup Time (alpine:x.y.z) [s] | WIP   | WIP | WIP            |
+| Cluster RAM Size [mb]       | **~96**   | **[~5,476][docs-k8s-ram-size]** | WIP            |
+| Cluster Disk Size [mb]      | **~48**   | **[~2,750][docs-k8s-binary-size]** | WIP            |
+| System Binary Size (total) [mb] | **~50**   | **[~2,770][docs-k8s-binary-size]** | WIP            |
+
 **System:** Macbook M[x] Pro (reboot + all apps closed)
 
 **Last update:** WIP
 
-| Measurements                | TIO   | K8s | Docker Desktop |
-|-----------------------------|-------|-----|----------------|
-| Container Startup Time (alpine:x.y.z) [s] | WIP   | WIP | WIP            |
-| Cluster RAM Size [mb]       | WIP   | WIP | WIP            |
-| Cluster Disk Size [mb]      | WIP   | WIP | WIP            |
-| System Binary Size (total) [mb] | WIP   | WIP | WIP            |
+**TIO:** (HA, 3 nodes)
+
+**K8s:** (HA, 3 Master, 2 Worker nodes)
 
 ---
 
@@ -318,6 +322,8 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [repo-discussions]: https://github.com/pure-linux/tinyo/discussions
 [repo-docs-vision-comparisons-k8s-complexities.md]: ./docs/vision/comparisons/k8s/complexities.md
 [repo-docs-vision-comparisons-k8s#etcd-limitations]: ./docs/vision/comparisons/k8s/complexities.md#etcd-limitations-and-control-plane-complexity
+[docs-k8s-binary-size]: ./docs/vision/comparisons/k8s/size/binary.md
+[docs-k8s-ram-size]: ./docs/vision/comparisons/k8s/size/ram.md
 [pure-linux-discord]: https://discord.gg/ERKBk6ArnQ
 [pure-linux-dao]: https://github.com/pure-linux/DAO
 [tinyoctl]: https://github.com/pure-linux/tinyoctl
