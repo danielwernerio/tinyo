@@ -224,7 +224,7 @@ Don't worry about master/worker nodes and so on. The system operates similarly t
 - **[tinyoctl][tinyoctl]:** Contains cli and packages intended for use by client programs.
 - **[tinyonode][tinyonode]:** Controller for each cluster node. Think of it as biolerplate code which is orchestrating the [runtime][tinyort](s).
 - **[tinyokv][tinyokv]:** A high performance distributed Key-Value store for [tinyonode][tinyonode] (WIP).
-- **[tinyort][tinyort]:** Container runtime ([Core Architecture][tinyort-docs-utils-core-readme.md])
+- **[tinyort][tinyort]:** Runtime
 
 E.g. the [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the size of about **350** code lines. The **MVP** should remain **below 2-3k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
 
@@ -329,7 +329,6 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [tinyodash]: https://github.com/pure-linux/tinyodash
 [tinyocloud]: https://github.com/pure-linux/tinyocloud
 [tinyort-src-utils-core.rs]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/src/utils/core.rs
-[tinyort-docs-utils-core-readme.md]: https://github.com/pure-linux/tinyort/blob/release/alpha/0.0.1/docs/utils/core/README.md
 [purelinux.org]: https://purelinux.org
 [rust-lang.org]: https://rust-lang.org
 [kubernetes.io]: https://kubernetes.io
