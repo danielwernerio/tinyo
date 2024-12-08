@@ -23,6 +23,7 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
 </blockquote>
 
 **System:** Macbook M[x] Pro (reboot + all apps closed)
+
 **Last update:** WIP
 
 | Measurements                | TIO   | K8s | Docker Desktop |
@@ -82,7 +83,7 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
 - **🚀 Setup**: [One cmd](#-quickstart) cluster setup via [tinyoctl][tinyoctl].
 - **🍦 CLI**: Minimal [cli](#-usage) (interface) (e.g. `tio + l.yml`).
 - **𐬺 Config:** Minimal [Statefiles](#-usage) (`yml`).
-- **🔫 [One cmd setup](#-quickstart):** Be ready in seconds.
+- **[Quickstart](#-quickstart):** Be ready in seconds.
   - TIO [ctl/cli][tinyoctl] (`tio`)
   - TIO Cluster ([tinyonode][tinyonode], [tinyokv][tinyokv], [tinyort][tinyort])
   - ([Docker Hub][hub.docker.com] image (user-selected))
