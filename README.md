@@ -55,6 +55,7 @@
 ## ☁️ Overview
 
 This is the **alpha** version of **TIO**.
+
 **Status:** We're working on the first MVP (1 node **localhost** cluster for **Linux®** & **MacOS®**).
 
 ## 💥 Features
@@ -64,13 +65,13 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
 ### Simplicity.
 
 - **🚀 Setup**: [One cmd](#-quickstart) cluster setup via [tinyoctl][tinyoctl].
-- **🍦 CLI**: Minimal [cli](#-usage) (interface) (e.g. `tio + f.yml`).
+- **🍦 CLI**: Minimal [cli](#-usage) (interface) (e.g. `tio + l.yml`).
 - **𐬺 Config:** Minimal [Statefiles](#-usage) (`yml`).
 - **🔫 [One cmd setup](#-quickstart):** Be ready in seconds.
-  - TIO [ctl][tinyoctl]
+  - TIO [ctl/cli][tinyoctl] (`tio`)
   - TIO Cluster ([tinyonode][tinyonode], [tinyokv][tinyokv], [tinyort][tinyort])
   - ([Docker Hub][hub.docker.com] image (user-selected))
-  - ([VSCode Server][vscode-server] (connect into container))
+  - ([VSCode Server][vscode-server] (+ [devcontainers][devcontainers/templates]))
 
 ### Cluster
 
@@ -320,3 +321,4 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [go.dev]: https://go.dev
 [hub.docker.com]: https://hub.docker.com
 [vscode-server]: https://code.visualstudio.com/docs/remote/vscode-server
+[devcontainers/templates]: https://github.com/devcontainers/templates
