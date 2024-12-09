@@ -96,7 +96,7 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
 - **🏁 Quickstart:** Be ready in seconds.
   - [1 curl](#-quickstart) cluster setup
     - TIO [ctl/cli][tinyoctl] (`tio`)
-    - TIO `cluster` ([tinyonode][tinyonode], [tinyokv][tinyokv], [tinyort][tinyort])
+    - TIO `cluster` ([tinyolet][tinyolet], [tinyokv][tinyokv], [tinyort][tinyort])
     - ([Docker Hub][hub.docker.com] image (user-selected))
     - ([VSCode Server][vscode-server] (+ [devcontainers][devcontainers/templates]))
 
@@ -237,12 +237,12 @@ mounts:
 
 ### Components
 
-The system has the following **4 main components**. [tinyoctl][tinyoctl] interacts with [tinyonode][tinyonode] to start [tinyort][tinyort]. [tinyokv][tinyokv] is the data store for the TIO cluster [node(s)][tinyonode].
+The system has the following **4 main components**. [tinyoctl][tinyoctl] interacts with [tinyolet][tinyolet] to start [tinyort][tinyort]. [tinyokv][tinyokv] is the data store for the TIO cluster [node(s)][tinyolet].
 Don't worry about master/worker nodes and so on. The system operates similarly to a **mesh** topology:
 
 - **[tinyoctl][tinyoctl]:** Contains cli and packages intended for use by client programs.
-- **[tinyonode][tinyonode]:** Controller for each cluster node. Think of it as biolerplate code which is orchestrating the [runtime][tinyort](s).
-- **[tinyokv][tinyokv]:** A high performance distributed Key-Value store for [tinyonode][tinyonode] (WIP).
+- **[tinyolet][tinyolet]:** Controller for each cluster node. Think of it as biolerplate code which is orchestrating the [runtime][tinyort](s).
+- **[tinyokv][tinyokv]:** A high performance distributed Key-Value store for [tinyolet][tinyolet] (WIP).
 - **[tinyort][tinyort]:** Runtime
 
 E.g. the [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has the size of about **350** code lines. The **MVP** should remain **below 2-3k** lines for single localhost container with storage & networking (+ Docker Hub download, ..).
@@ -342,7 +342,7 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [pure-linux-discord]: https://discord.gg/ERKBk6ArnQ
 [pure-linux-dao]: https://github.com/pure-linux/DAO
 [tinyoctl]: https://github.com/pure-linux/tinyoctl
-[tinyonode]: https://github.com/pure-linux/tinyonode
+[tinyolet]: https://github.com/pure-linux/tinyolet
 [tinyokv]: https://github.com/pure-linux/tinyokv
 [tinyort]: https://github.com/pure-linux/tinyort
 [tinyort-fuzzer]: https://github.com/pure-linux/tinyort-fuzzer
