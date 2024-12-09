@@ -87,6 +87,7 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
 - **🚀 Setup**: [One cmd](#-quickstart) cluster setup via [tinyoctl][tinyoctl].
 - **🍦 CLI**: Minimal [cli](#-usage) (interface) (e.g. `tio + l.yml`).
 - **𐬺 Config:** Minimal [Statefiles](#-usage) (`yml`).
+  - Built-in user management with intuitive `cli` login
 - **[Quickstart](#-quickstart):** Be ready in seconds.
   - TIO [ctl/cli][tinyoctl] (`tio`)
   - TIO Cluster ([tinyonode][tinyonode], [tinyokv][tinyokv], [tinyort][tinyort])
@@ -120,6 +121,10 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
 
 ##### ⚡️ Direct Network
 
+| Measurement                                    | TIO   | K8s  | Docker Desktop |
+|-----------------------------------------------|-------|------|----------------|
+| Container to Container Network Throughput [mb]  | WIP   | WIP  | WIP            |
+
 TIO introduces an innovative feature for optimizing container communication on the same node, **reducing overhead** and improving performance. Unlike traditional networking approaches that rely on full TCP/IP stacks or ingress mechanisms, this runtime leverages **direct communication** methods tailored for **Linux** architectures.
 Standard mechanisms will be added in the future to keep more advanced features **optional**.
 
@@ -137,6 +142,10 @@ Standard mechanisms will be added in the future to keep more advanced features *
 - **Customizability:** Designed for flexible implementation to fit diverse container workloads.
 
 ##### ➕ Instant Duplication
+
+| Measurement                                    | TIO   | K8s  | Docker Desktop |
+|-----------------------------------------------|-------|------|----------------|
+| 1000 alpine:x.y.z Container parallel start [s]    | WIP   | WIP  | WIP            |
 
 This feature introduces an approach to container instantiation based on existing ones in **milliseconds** on a single node. Instead of traditional container creation workflows, which rely on extracting and initializing container images from scratch, this method enables **low-level duplication of existing containers** already running on the node. This drastically reduces the time required to spin up identical containers, providing a significant performance boost for scenarios requiring rapid scaling or cloning.
 
