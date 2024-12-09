@@ -57,7 +57,7 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
         - [Key Features](#key-features-1)
         - [Benefits](#benefits-1)
 - [🏁 Quickstart](#-quickstart)
-- [☑️ Usage](#️-usage)
+- [🍦 Usage](#-usage)
 - [Architecture](#architecture)
   - [Components](#components)
   - [Challenge](#challenge)
@@ -88,13 +88,13 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
 
 ### Simplicity.
 
-- **🍦 CLI**: Minimal [cli](#-usage) (interface) (e.g. `tio + l.yml`).
+- **🍦 CLI**: Minimal [cli](#-usage) (e.g. `tio + l.yml`).
 - **𐬺 Config:** Minimal [Statefiles](#-usage) (`yml`).
   - Built-in `user` management with intuitive `cli` login
   - Built-in `container` `secrets` injection
   - WIP
-- **🚀 [Quickstart](#-quickstart):** Be ready in seconds.
-  - [1 curl away](#-quickstart) cluster setup
+- **🏁 Quickstart:** Be ready in seconds.
+  - [1 curl](#-quickstart) cluster setup
     - TIO [ctl/cli][tinyoctl] (`tio`)
     - TIO `cluster` ([tinyonode][tinyonode], [tinyokv][tinyokv], [tinyort][tinyort])
     - ([Docker Hub][hub.docker.com] image (user-selected))
@@ -194,7 +194,7 @@ Ensure you have the necessary permissions and understand the **security implicat
 
 ⚠️ The current alpha version of TIO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
 
-## ☑️ Usage
+## 🍦 Usage
 
 <blockquote>
  <span>
