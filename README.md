@@ -88,17 +88,17 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
 
 ### Simplicity.
 
-- **🚀 Setup**: [One cmd](#-quickstart) cluster setup via [tinyoctl][tinyoctl].
 - **🍦 CLI**: Minimal [cli](#-usage) (interface) (e.g. `tio + l.yml`).
 - **𐬺 Config:** Minimal [Statefiles](#-usage) (`yml`).
   - Built-in `user` management with intuitive `cli` login
   - Built-in `container` `secrets` injection
   - WIP
-- **[Quickstart](#-quickstart):** Be ready in seconds.
-  - TIO [ctl/cli][tinyoctl] (`tio`)
-  - TIO Cluster ([tinyonode][tinyonode], [tinyokv][tinyokv], [tinyort][tinyort])
-  - ([Docker Hub][hub.docker.com] image (user-selected))
-  - ([VSCode Server][vscode-server] (+ [devcontainers][devcontainers/templates]))
+- **🚀 [Quickstart](#-quickstart):** Be ready in seconds.
+  - [1 curl away](#-quickstart) cluster setup
+    - TIO [ctl/cli][tinyoctl] (`tio`)
+    - TIO `cluster` ([tinyonode][tinyonode], [tinyokv][tinyokv], [tinyort][tinyort])
+    - ([Docker Hub][hub.docker.com] image (user-selected))
+    - ([VSCode Server][vscode-server] (+ [devcontainers][devcontainers/templates]))
 
 ### Cluster
 
