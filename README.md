@@ -145,7 +145,7 @@ Standard mechanisms will be added in the future to keep more advanced features *
 
 | Measurement                                    | TIO   | K8s  | Docker Desktop |
 |-----------------------------------------------|-------|------|----------------|
-| 1000 alpine:x.y.z Container parallel start [s]    | WIP   | WIP  | WIP            |
+| 1000 alpine:x.y.z Container Parallel Start [s]    | WIP   | WIP  | WIP            |
 
 This feature introduces an approach to container instantiation based on existing ones in **milliseconds** on a single node. Instead of traditional container creation workflows, which rely on extracting and initializing container images from scratch, this method enables **low-level duplication of existing containers** already running on the node. This drastically reduces the time required to spin up identical containers, providing a significant performance boost for scenarios requiring rapid scaling or cloning.
 
