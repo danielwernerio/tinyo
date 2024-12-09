@@ -251,6 +251,9 @@ To improve TIO and to make it completely accessible to the entire developer comm
 
 - [tinyoapt][tinyoapt]: Advanced Package Tool to simplify the setup of various applications within a cluster.
 - [tinyodash][tinyodash]: TIO Pro Dashboard for local development & cloud operations.
+- [tinyoctl-k8s-converter][tinyoctl-k8s-converter]: Converts [K8s][kubernetes.io] `yaml` to **TIO** formats
+
+**1 security related component:**
 - [tinyort-fuzzer][tinyort-fuzzer]: Partial automated Fuzzer for the TIO [container runtime][tinyort].
 
 ### Challenge
@@ -342,6 +345,7 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [pure-linux-discord]: https://discord.gg/ERKBk6ArnQ
 [pure-linux-dao]: https://github.com/pure-linux/DAO
 [tinyoctl]: https://github.com/pure-linux/tinyoctl
+[tinyoctl-k8s-converter]: https://github.com/pure-linux/tinyoctl-k8s-converter
 [tinyolet]: https://github.com/pure-linux/tinyolet
 [tinyokv]: https://github.com/pure-linux/tinyokv
 [tinyort]: https://github.com/pure-linux/tinyort
