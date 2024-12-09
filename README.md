@@ -10,7 +10,7 @@
   </p>
 </div>
 
-**TIO** - An extremely **simple** cloud-native container **orchestrator** that is a [Rust][rust-lang.org] alternative to [more complex][repo-docs-vision-comparisons-k8s-complexities.md] solutions like [K8s][kubernetes.io] ([Go][go.dev]).
+**TIO** - A **simple** **orchestrator** in [Rust][rust-lang.org].
 
 Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tinygrad.org].
 
