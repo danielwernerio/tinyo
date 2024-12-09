@@ -22,20 +22,24 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
  </span>
 </blockquote>
 
-| Measurements                | TIO   | K8s | Docker Desktop |
+| Measurements                | TIO   | K8s | Docker |
 |-----------------------------|-------|-----|----------------|
 | Container Startup Time (alpine:x.y.z) [s] | WIP   | WIP | WIP            |
 | Cluster RAM Size [mb]       | **~288**   | **[~5,476][docs-k8s-ram-size]** | WIP            |
 | Cluster Disk Size [mb]      | **~144**   | **[~2,750][docs-k8s-binary-size]** | WIP            |
 | System Binary Size (total) [mb] | **~50**   | **[~2,770][docs-k8s-binary-size]** | WIP            |
 
-**System:** Macbook M[x] Pro (reboot + all apps closed)
+**System:**
+- [Ubuntu Server][ubuntu-server] 24.04.1 LTS
+- [OVH VPS Comfort][ovhcloud.com] (4 vCore, 8 GB, 160 GB SSD NVMe, 1 Gbps)
 
 **Last update:** WIP
 
-**TIO:** (HA, 3 nodes)
+**TIO:** (HA, 3 Mesh Nodes)
 
-**K8s:** (HA, 3 Master, 2 Worker nodes)
+**K8s:** (HA, 3 Master, 2 Worker Nodes)
+
+**Docker:** WIP
 
 ---
 
@@ -349,6 +353,8 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [kubernetes.io]: https://kubernetes.io
 [tenstorrent.com]: https://tenstorrent.com
 [tinygrad.org]: https://tinygrad.org
+[ubuntu-server]: https://ubuntu.com/server
+[ovhcloud.com]: https://www.ovhcloud.com/en/vps
 [etcd.io]: https://etcd.io
 [go.dev]: https://go.dev
 [hub.docker.com]: https://hub.docker.com
