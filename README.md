@@ -10,7 +10,10 @@
   </p>
 </div>
 
-**TIO** - A **simple** **orchestrator** in [Rust][rust-lang.org].
+**TIO** - A simple **orchestrator** in [Rust][rust-lang.org].
+
+[1/8 components:](#components)
+- [tinyoctl-k8s-converter][tinyoctl-k8s-converter]: Converts [K8s][kubernetes.io] `yaml` Statefile to TIO Statefile and `helm` to TIO `apt` ([Vision](#-vision)).
 
 Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tinygrad.org].
 
@@ -250,9 +253,9 @@ E.g. the [tinyort/src/utils/core.rs][tinyort-src-utils-core.rs] currently has th
 
 To improve TIO and to make it completely accessible to the entire developer community, we introduced the following **3 additional components:**
 
-- [tinyoapt][tinyoapt]: Advanced Package Tool to simplify the setup of various applications within a cluster.
+- [tinyoapt][tinyoapt]: Package Tool to simplify the setup of various applications within a cluster.
 - [tinyodash][tinyodash]: TIO Pro Dashboard for local development & cloud operations.
-- [tinyoctl-k8s-converter][tinyoctl-k8s-converter]: Converts [K8s][kubernetes.io] `yaml` to **TIO** Statefile spec.
+- [tinyoctl-k8s-converter][tinyoctl-k8s-converter]: Converts [K8s][kubernetes.io] `yaml` Statefile to TIO Statefile and `helm` to TIO `apt` ([Vision](#-vision)).
 
 **1 security related component:**
 - [tinyort-fuzzer][tinyort-fuzzer]: Partial automated Fuzzer for the TIO [runtime][tinyort].
