@@ -10,7 +10,7 @@
   </p>
 </div>
 
-**TIO** - A simple Linux® **orchestrator**.
+**TIO** - A simple [Linux®][linux.org] **orchestrator**.
 
 [1/8 components:](#components)
 - [tinyoctl-k8s-converter][tinyoctl-k8s-converter]: Converts [K8s][kubernetes.io] `yaml` Statefile to TIO Statefile and `helm` to TIO `apt` ([Vision](#vision)).
@@ -319,6 +319,7 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 
 ###### Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries.
 
+[linux.org]: https://www.linux.org
 [repo-contributors]: https://github.com/pure-linux/tinyo/graphs/contributors
 [repo-issues]: https://github.com/pure-linux/tinyo/issues
 [repo-commits]: https://github.com/pure-linux/tinyo/commits
