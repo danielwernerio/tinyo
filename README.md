@@ -50,7 +50,7 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
 - [☁️ Overview](#️-overview)
     - [Challenge](#challenge)
 - [💥 Features](#-features)
-  - [Simplicity.](#simplicity)
+  - [Simplicity](#simplicity)
   - [Cluster](#cluster)
   - [Runtime](#runtime)
     - [Optimized Intra-Node Containers](#optimized-intra-node-containers)
@@ -94,7 +94,9 @@ If you're able to delete lines and/or break the [runtime (tinyort)][tinyort] in 
 
 ## 💥 Features
 
-### Simplicity.
+Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md].
+
+### Simplicity
 
 - **🍦 CLI**: Minimal [cli](#-usage) (e.g. `tio + l.yml`).
 - **𐬺 Config:** Minimal [Statefiles](#-usage) (`yml`).
@@ -178,8 +180,6 @@ This feature introduces an approach to container instantiation based on existing
 
 - **Rapid Scaling:** Scale up workloads almost instantly by duplicating existing containers on-demand.
 - **Significant Speedup:** Duplication is faster than traditional container creation methods, even those optimized by tools like Kubernetes.
-
-Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md].
 
 Please give the **community feedback** about your opinion regarding the development of TIO ([Issues][repo-issues]/[Commits][repo-commits]/[Discussions][repo-discussions]).
 
