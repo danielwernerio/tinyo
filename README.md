@@ -64,10 +64,10 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
 - [🍦 Usage](#-usage)
 - [Architecture](#architecture)
   - [Components](#components)
-  - [Vision](#vision)
-    - [Roadmap](#roadmap)
-      - [Phase 1: Bicycle](#phase-1-bicycle)
-      - [Phase 2: Car](#phase-2-car)
+- [Vision](#vision)
+  - [Roadmap](#roadmap)
+    - [Phase 1: Bicycle](#phase-1-bicycle)
+    - [Phase 2: Car](#phase-2-car)
 - [PureLinux DAO](#purelinux-dao)
   - [Important IP contributors](#important-ip-contributors)
   - [Financial Sponsors](#financial-sponsors)
@@ -260,7 +260,7 @@ To improve TIO and to make it completely accessible to the entire developer comm
 **1 security related component:**
 - [tinyort-fuzzer][tinyort-fuzzer]: Partial automated Fuzzer for the TIO [runtime][tinyort].
 
-### Vision
+## Vision
 
 <blockquote>
  <span>
@@ -268,9 +268,9 @@ To improve TIO and to make it completely accessible to the entire developer comm
  </span>
 </blockquote>
 
-#### Roadmap
+### Roadmap
 
-##### Phase 1: Bicycle
+#### Phase 1: Bicycle
 
 - Minimal **prototype** that addresses localhost development with containers
 - MVP version
@@ -278,7 +278,7 @@ To improve TIO and to make it completely accessible to the entire developer comm
   - WIP
 - WIP
 
-##### Phase 2: Car
+#### Phase 2: Car
 
 - `w` `clusters` in `x` `clusters` with `y` `nodes` containing `z` `containers`
 - WIP
