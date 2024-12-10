@@ -10,7 +10,7 @@
   </p>
 </div>
 
-**TIO** - A simple Linux® **orchestrator** in [Rust][rust-lang.org].
+**TIO** - A simple Linux® **orchestrator**.
 
 [1/8 components:](#components)
 - [tinyoctl-k8s-converter][tinyoctl-k8s-converter]: Converts [K8s][kubernetes.io] `yaml` Statefile to TIO Statefile and `helm` to TIO `apt` ([Vision](#vision)).
