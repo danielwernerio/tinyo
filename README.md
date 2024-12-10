@@ -55,7 +55,7 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
 - [Benchmark](#benchmark)
 - [☁️ Overview](#️-overview)
     - [Challenge](#challenge)
-- [💥 Features](#-features)
+- [Features](#features)
   - [Simplicity](#simplicity)
   - [Cluster](#cluster)
   - [Runtime](#runtime)
@@ -67,7 +67,7 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
         - [Key Features](#key-features-1)
         - [Benefits](#benefits-1)
 - [🏁 Quickstart](#-quickstart)
-- [🍦 Usage](#-usage)
+- [Usage](#usage)
 - [Architecture](#architecture)
   - [Components](#components)
 - [Vision](#vision)
@@ -98,7 +98,7 @@ This is the **alpha** version of **TIO**.
 
 If you're able to delete lines and/or break the [runtime (tinyort)][tinyort] in any meaningful way, you will be listed in [1337 H4x0r](#1337-h4x0r). Please be kind, this is an early alpha. [![pure-linux-discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ)
 
-## 💥 Features
+## Features
 
 Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md].
 
@@ -204,7 +204,7 @@ Ensure you have the necessary permissions and understand the **security implicat
 
 ⚠️ The current alpha version of TIO should only be used in a controlled environment, such as a **virtual machine** (or container, but currently not supported) to prevent **unintended side effects** on your **host system**.
 
-## 🍦 Usage
+## Usage
 
 <blockquote>
  <span>
