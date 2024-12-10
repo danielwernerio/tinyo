@@ -10,20 +10,20 @@
   </p>
 </div>
 
-**TIO** - A simple **orchestrator** in [Rust][rust-lang.org].
+**TIO** - A simple Linux® **orchestrator** in [Rust][rust-lang.org].
 
 [1/8 components:](#components)
 - [tinyoctl-k8s-converter][tinyoctl-k8s-converter]: Converts [K8s][kubernetes.io] `yaml` Statefile to TIO Statefile and `helm` to TIO `apt` ([Vision](#vision)).
 
 Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tinygrad.org].
 
-## Benchmark
-
 <blockquote>
  <span>
-    It's tiny, but it's fast.
+  A GitHub ⭐️ would support the open-source ecosystem of TIO in a meaningful way.
  </span>
 </blockquote>
+
+## Benchmark
 
 | Measurements                | TIO   | [K8s][kubernetes.io] | [Podman][containers/podman] |
 |-----------------------------|-------|-----|----------------|
@@ -31,6 +31,12 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
 | Cluster RAM Size [mb]       | **~288**   | **[~5,476][docs-k8s-ram-size]** | -            |
 | Cluster Disk Size [mb]      | **~144**   | **[~2,750][docs-k8s-binary-size]** | -            |
 | System Binary Size (total) [mb] | **~50**   | **[~2,770][docs-k8s-binary-size]** | WIP            |
+
+<blockquote>
+ <span>
+    It's tiny, but it's fast.
+ </span>
+</blockquote>
 
 **System:**
 - [Ubuntu Server][ubuntu-server] 24.04.1 LTS
@@ -297,7 +303,7 @@ The people that are listed below made important direct and/or indirect contribut
 
 ### Financial Sponsors
 
-We are very grateful for every GitHub Sponsor, but ⭐️ helps a lot, too!
+We are very grateful for every GitHub/.. Sponsor:
 
 - [GitHub username]
 
