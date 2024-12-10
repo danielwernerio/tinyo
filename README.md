@@ -22,11 +22,11 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
  </span>
 </blockquote>
 
-| Measurements                | TIO   | K8s | Docker |
+| Measurements                | TIO   | [K8s][kubernetes.io] | [Podman][containers/podman] |
 |-----------------------------|-------|-----|----------------|
 | Container Startup Time (alpine:x.y.z) [s] | WIP   | WIP | WIP            |
-| Cluster RAM Size [mb]       | **~288**   | **[~5,476][docs-k8s-ram-size]** | WIP            |
-| Cluster Disk Size [mb]      | **~144**   | **[~2,750][docs-k8s-binary-size]** | WIP            |
+| Cluster RAM Size [mb]       | **~288**   | **[~5,476][docs-k8s-ram-size]** | -            |
+| Cluster Disk Size [mb]      | **~144**   | **[~2,750][docs-k8s-binary-size]** | -            |
 | System Binary Size (total) [mb] | **~50**   | **[~2,770][docs-k8s-binary-size]** | WIP            |
 
 **System:**
@@ -39,12 +39,13 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
 
 **K8s:** (HA, 3 Master, 2 Worker Nodes)
 
-**Docker:** WIP
+**Podman:** WIP
 
 ---
 
 - [Benchmark](#benchmark)
 - [☁️ Overview](#️-overview)
+    - [Challenge](#challenge)
 - [💥 Features](#-features)
   - [Simplicity.](#simplicity)
   - [Cluster](#cluster)
@@ -60,14 +61,10 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
 - [🍦 Usage](#-usage)
 - [Architecture](#architecture)
   - [Components](#components)
-  - [Challenge](#challenge)
-  - [Roadmap](#roadmap)
-    - [Phase 1: Solve localhost environment](#phase-1-solve-localhost-environment)
   - [Vision](#vision)
-    - [Comparisons](#comparisons)
-      - [General](#general)
-      - [Docker Desktop](#docker-desktop)
-      - [Kubernetes](#kubernetes)
+    - [Roadmap](#roadmap)
+      - [Phase 1: Bicycle](#phase-1-bicycle)
+      - [Phase 2: Car](#phase-2-car)
 - [PureLinux DAO](#purelinux-dao)
   - [Important IP contributors](#important-ip-contributors)
   - [Financial Sponsors](#financial-sponsors)
@@ -82,9 +79,17 @@ This is the **alpha** version of **TIO**.
 
 **Status:** We're working on the first MVP (1 node **localhost** cluster for **Linux®** & **MacOS®**).
 
-## 💥 Features
+#### Challenge
 
-Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md].
+<blockquote>
+ <span>
+    If you can break it, you truly understand it.
+ </span>
+</blockquote>
+
+If you're able to delete lines and/or break the [runtime (tinyort)][tinyort] in any meaningful way, you will be listed in [1337 H4x0r](#1337-h4x0r). Please be kind, this is an early alpha. [![pure-linux-discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ)
+
+## 💥 Features
 
 ### Simplicity.
 
@@ -128,7 +133,7 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
 
 ##### ⚡️ Direct Network
 
-| Measurement                                    | TIO   | K8s  | Docker Desktop |
+| Measurements                | TIO   | [K8s][kubernetes.io] | [Podman][containers/podman] |
 |-----------------------------------------------|-------|------|----------------|
 | Container to Container Network Throughput [mb]  | WIP   | WIP  | WIP            |
 
@@ -150,7 +155,7 @@ Standard mechanisms will be added in the future to keep more advanced features *
 
 ##### ➕ Instant Duplication
 
-| Measurement                                    | TIO   | K8s  | Docker Desktop |
+| Measurements                | TIO   | [K8s][kubernetes.io] | [Podman][containers/podman] |
 |-----------------------------------------------|-------|------|----------------|
 | 1000 alpine:x.y.z Container Parallel Start [s]    | WIP   | WIP  | WIP            |
 
@@ -171,13 +176,8 @@ This feature introduces an approach to container instantiation based on existing
 - **Rapid Scaling:** Scale up workloads almost instantly by duplicating existing containers on-demand.
 - **Significant Speedup:** Duplication is faster than traditional container creation methods, even those optimized by tools like Kubernetes.
 
-<blockquote>
- <span>
-    TIO tries to tackle known K8s complexities.
- </span>
-</blockquote>
+Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md].
 
-Check out the [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md] for an overview of the challenges we want to address, among others.
 Please give the **community feedback** about your opinion regarding the development of TIO ([Issues][repo-issues]/[Commits][repo-commits]/[Discussions][repo-discussions]).
 
 ## 🏁 Quickstart
@@ -257,27 +257,6 @@ To improve TIO and to make it completely accessible to the entire developer comm
 **1 security related component:**
 - [tinyort-fuzzer][tinyort-fuzzer]: Partial automated Fuzzer for the TIO [runtime][tinyort].
 
-### Challenge
-
-If you're able to delete lines and/or break the [runtime][tinyort] in any meaningful way, you will be listed in [1337 H4x0r](#1337-h4x0r). Please be kind, this is an early alpha.
-
-<blockquote>
- <span>
-    If you can break it, you truly understand it.
- </span>
-</blockquote>
-
-Feel free to [![pure-linux-discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/ERKBk6ArnQ).
-
-### Roadmap
-
-#### Phase 1: Solve localhost environment
-
-- Minimal prototype
-  - Start alpine container **faster** than **Docker** with low-level libraries
-- Base version
-  - WIP
-
 ### Vision
 
 <blockquote>
@@ -286,24 +265,20 @@ Feel free to [![pure-linux-discord](https://img.shields.io/badge/discord-join-72
  </span>
 </blockquote>
 
-#### Comparisons
+#### Roadmap
 
-##### General
+##### Phase 1: Bicycle
 
-- RAM/Memory bandwith is expensive. If we're Rust + tiny this could reduce cloud costs in general.
-
-##### Docker Desktop
-
-- **Speed:** Be faster. (Container/TIO App startup, tinyoctl execution, WIP)
-- **Accessibility:** Better GUI (lean, clean & fancy)
+- Minimal **prototype** that addresses localhost development with containers
+- MVP version
+  - Base `cli`
+  - WIP
 - WIP
 
-##### Kubernetes
+##### Phase 2: Car
 
-We **simplify** known K8s difficulties step by step.
-To take a look at the most known challenges **jump to [k8s/complexities.md][repo-docs-vision-comparisons-k8s-complexities.md]**.
-
-The goal is to **support important use cases** & **workflows** for which K8s is often used today.
+- `w` `clusters` in `x` `clusters` with `y` `nodes` containing `z` `containers`
+- WIP
 
 ---
 
@@ -363,6 +338,7 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [ubuntu-server]: https://ubuntu.com/server
 [ovhcloud.com]: https://www.ovhcloud.com/en/vps
 [etcd.io]: https://etcd.io
+[containers/podman]: https://github.com/containers/podman
 [go.dev]: https://go.dev
 [hub.docker.com]: https://hub.docker.com
 [vscode-server]: https://code.visualstudio.com/docs/remote/vscode-server
