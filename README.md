@@ -90,6 +90,7 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
 
 - **🍦 CLI**: Minimal [cli](#-usage) (e.g. `tio + l.yml`).
 - **𐬺 Config:** Minimal [Statefiles](#-usage) (`yml`).
+  - Decentralized `cluster` `mesh` (VPN: [Nebula based][tinyolet-docs-vpn-manager-options-analysis.md], [More Details][tinyolet])
   - Built-in `user` management with intuitive `cli` login
   - Built-in `container` `secrets` injection
   - WIP
@@ -366,3 +367,4 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [hub.docker.com]: https://hub.docker.com
 [vscode-server]: https://code.visualstudio.com/docs/remote/vscode-server
 [devcontainers/templates]: https://github.com/devcontainers/templates
+[tinyolet-docs-vpn-manager-options-analysis.md]: https://github.com/pure-linux/tinyolet/docs/components/vpn-manager/options-analysis.md
