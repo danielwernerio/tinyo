@@ -23,6 +23,9 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
  </span>
 </blockquote>
 
+![Dashboard Visualisation 1](assets/img/demo/dashboard-1.png "Dashboard Visualisation 1")
+Source: [k8svisual/vpk][k8svisual/vpk]
+
 ## Benchmark
 
 | Measurements                | TIO   | [K8s][kubernetes.io] | [Podman][containers/podman] |
@@ -343,6 +346,7 @@ Experts who successfully deleted lines and/or meaningfully broke the [runtime][t
 [purelinux.org]: https://purelinux.org
 [rust-lang.org]: https://rust-lang.org
 [kubernetes.io]: https://kubernetes.io
+[k8svisual/vpk]: https://github.com/k8svisual/vpk
 [tenstorrent.com]: https://tenstorrent.com
 [tinygrad.org]: https://tinygrad.org
 [ubuntu-server]: https://ubuntu.com/server
