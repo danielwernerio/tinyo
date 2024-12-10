@@ -120,11 +120,6 @@ Enforcing least-privilege access and maintaining isolation between namespaces ca
 
 ## Documentation
 
-### Insufficient Documentation
-Official documentation can be technical without real-world examples.
-
-- **Gaps in guidance:** Developers rely on community blogs, forums, and Q&A sites for practical advice.
-
 ### Outdated Information
 Frequent changes can render older tutorials obsolete.
 
