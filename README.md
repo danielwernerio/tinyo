@@ -23,9 +23,6 @@ Inspired by [Tenstorrent][tenstorrent.com], [K8s][kubernetes.io], [tinygrad][tin
  </span>
 </blockquote>
 
-![Dashboard Visualisation 1](assets/img/demo/dashboard-1.png "Dashboard Visualisation 1")
-Source: [k8svisual/vpk][k8svisual/vpk]
-
 ## Benchmark
 
 | Measurements                | TIO   | [K8s][kubernetes.io] | [Podman][containers/podman] |
@@ -77,6 +74,8 @@ Source: [k8svisual/vpk][k8svisual/vpk]
   - [Roadmap](#roadmap)
     - [Phase 1: Bicycle](#phase-1-bicycle)
     - [Phase 2: Car](#phase-2-car)
+    - [Dashboard Pro](#dashboard-pro)
+      - [Concept](#concept)
 - [PureLinux DAO](#purelinux-dao)
   - [Important IP contributors](#important-ip-contributors)
   - [Financial Sponsors](#financial-sponsors)
@@ -89,7 +88,7 @@ Source: [k8svisual/vpk][k8svisual/vpk]
 
 This is the **alpha** version of **TIO**.
 
-**Status:** We're working on the first MVP (1 node **localhost** cluster for **Linux®** & **MacOS®**).
+**Status:** We're working on the first MVP (1 node **localhost** `cluster` for **Linux®** & **MacOS®**).
 
 #### Challenge
 
@@ -114,7 +113,7 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
   - Built-in `container` `secrets` injection
   - WIP
 - **🏁 Quickstart:** Be ready in seconds.
-  - [1 curl](#-quickstart) cluster setup
+  - [1 curl](#-quickstart) `cluster` setup
     - TIO [ctl/cli][tinyoctl] (`tio`)
     - TIO `cluster` ([tinyolet][tinyolet], [tinyokv][tinyokv], [tinyort][tinyort])
     - ([Docker Hub][hub.docker.com] image (user-selected))
@@ -138,7 +137,7 @@ Some of the features of TIO are inspired from [k8s/complexities.md][repo-docs-vi
 - **Decentralized mesh**
   - **No master**/worker topology entities.
 - **Upgrades:** Hustle free (**simple** system -> better **LTS compatibility**)
-- **Recursive:** Cluster in cluster (tint) per default (**backup**/**restore** whole clusters with ease using [tinyoctl][tinyoctl])
+- **Recursive:** Cluster in `cluster` (tint) per default (**backup**/**restore** whole clusters with ease using [tinyoctl][tinyoctl])
 - **Dynamicity:** E.g. [etcd.io][etcd.io] for [K8s][kubernetes.io] has [important limitations][repo-docs-vision-comparisons-k8s#etcd-limitations] we want to address with [tinyokv][tinyokv].
 
 ### Runtime
@@ -217,7 +216,7 @@ Ensure you have the necessary permissions and understand the **security implicat
 
 TIO uses **minimal Statefiles** (`yml`) which are managed via [tinyoctl][tinyoctl] cli.
 
-First **setup** the first cluster **node** via `tinyoctl` cli (alias **tio**) by providing a network name, username & password of your initial admin user:
+First **setup** the first `cluster` **node** via `tinyoctl` cli (alias **tio**) by providing a network name, username & password of your initial admin user:
 ```sh
 tio ++ -net [network_name] -u [admin_username] -p [admin_password]
 ```
@@ -250,11 +249,11 @@ mounts:
 
 ### Components
 
-The system has the following **4 main components**. [tinyoctl][tinyoctl] interacts with [tinyolet][tinyolet] to start [tinyort][tinyort]. [tinyokv][tinyokv] is the data store for the TIO cluster [node(s)][tinyolet].
+The system has the following **4 main components**. [tinyoctl][tinyoctl] interacts with [tinyolet][tinyolet] to start [tinyort][tinyort]. [tinyokv][tinyokv] is the data store for the TIO `cluster` [node(s)][tinyolet].
 Don't worry about master/worker nodes and so on. The system operates similarly to a **mesh** topology:
 
 - **[tinyoctl][tinyoctl]:** Contains cli and packages intended for use by client programs.
-- **[tinyolet][tinyolet]:** Controller for each cluster node. Think of it as biolerplate code which is orchestrating the [runtime][tinyort](s).
+- **[tinyolet][tinyolet]:** Controller for each `cluster` node. Think of it as biolerplate code which is orchestrating the [runtime][tinyort](s).
 - **[tinyokv][tinyokv]:** A high performance distributed Key-Value store for [tinyolet][tinyolet] (WIP).
 - **[tinyort][tinyort]:** Runtime
 
@@ -291,6 +290,17 @@ To improve TIO and to make it completely accessible to the entire developer comm
 
 - `w` `clusters` in `x` `clusters` with `y` `nodes` containing `z` `containers`
 - WIP
+
+#### Dashboard Pro
+
+##### Concept
+
+<div align="center">
+  <img width="400" height="400" src="assets/img/demo/dashboard-1.png" >
+</div>
+
+**Visualisation:** Full scale TIO `cluster` with multiple `clusters`, `containers`, `storage`, `ingress`, `pipelines`, `scales`, WIP
+Source: [k8svisual/vpk][k8svisual/vpk]
 
 ---
 
